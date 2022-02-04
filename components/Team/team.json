@@ -34,9 +34,8 @@
           ]
         },
         {
-          "name": "Vladimir Radkevich",
-          "ava": "/assets/images/vladimir-r.png",
-          "position": "Co-founder & CTO"
+          "name": "<img src='/assets/images/svg_volodya.svg' />",
+          "ava": "/assets/images/vladimir-r.png"
         },
         {
           "name": "Pion Medvedeva",

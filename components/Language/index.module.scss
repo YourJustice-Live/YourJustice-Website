@@ -33,24 +33,34 @@
 .list {
   position: absolute;
   right: 0;
-  top: calc(100% + 10px);
+  top: 100%;
   width: 270px;
   padding: 12px;
   background: #F7F9FC;
   border-radius: 12px;
-  display: none;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
 
   &:before {
     // TODO: сделать стрелочку сверху
   }
 
   &.top {
-    top: -10px;
+    top: 0;
     transform: translateY(-100%);
   }
 
   &.opened {
     display: block;
+    top: calc(100% + 10px);
+    opacity: 1;
+    pointer-events: auto;
+
+    &.top {
+      top: -10px;
+    }
   }
 
   li {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import {Icon} from 'components'
 
@@ -10,7 +10,7 @@ export default function Person({person}) {
       <figure>
         <img src={person.ava} alt={person.name}/>
       </figure>
-      <p>{person.name}</p>
+      <p dangerouslySetInnerHTML={{ __html: person.name}}></p>
       {person.position && <span dangerouslySetInnerHTML={{ __html: person.position }}></span>}
       {person.socials && <ul>
         {person.socials.map((soc, i) => <li key={i}>

@@ -96,6 +96,7 @@ export default function Header({lang, setLang}) {
           <span></span>
           <span></span>
           <span></span>
+          <span></span>
         </button>
         <div className={`${style.menu} ${isMenuOpen ? style.opened : ''}`}>
           <div className={style.menuLanguage}>
