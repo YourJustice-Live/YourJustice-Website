@@ -1,0 +1,19 @@
+@import './mixins.scss';
+
+// YourJustice icon font
+@import './yourjustice.scss';
+
+// Manrope
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+// Red Hat Display
+@include font-face('redhatdisplay', RedHatDisplay-Italic, italic, 400);
+
+// Aeroport Mono
+@include font-face('aeroport', Aeroport Mono, normal, 400);
+
+// Kalam
+@include font-face('kalam', Kalam-Regular, normal, 400);
+
+// MonoLisa
+@include font-face('monolisa', MonoLisa-Regular, normal, 400);

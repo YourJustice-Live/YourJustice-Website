@@ -1,0 +1,70 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+@import 'styles/yourjustice-variables.scss';
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  position: relative;
+
+  a {
+    margin-bottom: 0;
+    position: relative;
+
+    &:hover {
+      @include text-gradient(99.67deg, #FFA3B5, -7.44%, #9975E7, 111.26%);
+
+      &:after {
+        @include text-gradient(99.67deg, #FFA3B5, -7.44%, #9975E7, 111.26%);
+      }
+    }
+
+    &:before {
+      content: none;
+    }
+
+    &:after {
+      @extend .if;
+      content: $if-chevron-right;
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      font-size: 16px;
+      line-height: 16px;
+      position: absolute;
+      top: 11px;
+    }
+
+    &:first-child {
+      padding: 7px 12px 7px 33px;
+
+      &:after {
+        left: 12px;
+        transform: rotate(180deg);
+      }
+    }
+
+    &:last-child {
+      padding: 7px 33px 7px 12px;
+
+      &:after {
+        right: 12px;
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: linear-gradient(157deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+  }
+}

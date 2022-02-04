@@ -1,0 +1,275 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+
+.wrapper {
+  position: relative;
+
+  &:not(:last-child) {
+    @include respond-to(lg) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &.opened, &.opened.sidebar {
+    padding: 0;
+
+    @include respond-to(lg) {
+      padding: 12px;
+    }
+  }
+
+  &.sidebar {
+    width: 100%;
+    padding-left: 11.5px;
+    padding-bottom: 24px;
+    border-left: solid 1px rgba(206, 219, 239, 0.3);
+
+    @include respond-to(lg) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      border: none;
+    }
+  }
+
+  &.left {
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: -11px;
+      top: 0;
+      background: rgba(206, 219, 239, 0.3);
+
+      @include respond-to(lg) {
+        content: none;
+      }
+    }
+
+    p, ul li a {
+      text-align: right;
+    }
+
+    ul ul {
+      padding-left: 0;
+      padding-right: 12px;
+    }
+
+    ul {
+      padding-left: 0;
+      margin-left: 0;
+      padding-right: 16px;
+      margin-right: -16px;
+
+      ul {
+        a.active {
+          &:before {
+            right: -26px;
+          }
+        }
+      }
+
+      a.active {
+        &:before {
+          right: -14px;
+          left: auto;
+        }
+      }
+    }
+  }
+
+  &:before {
+    content: none;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 1px;
+    background: linear-gradient(to right, $gradient-first-start -10.08%, $gradient-first-end 78.68%);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  @include respond-to(lg) {
+    &:before {
+      content: '';
+    }
+  }
+
+  .button {
+    display: none;
+    position: relative;
+    padding: 13px 64px 13px 12px;
+    background: none;
+
+    @include respond-to(lg) {
+      display: block;
+      width: 100%;
+    }
+
+    &.opened {
+      margin-bottom: 13px;
+      padding: 7px 64px 7px 7px;
+
+      &:before {
+        content: '';
+      }
+
+      &:after {
+        transform: rotate(180deg);
+        top: 8px;
+        right: 7px;
+      }
+    }
+
+    &:before {
+      content: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+    }
+
+    &:after {
+      @extend .if;
+      content: '\e91a';
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      font-size: 22px;
+      display: block;
+      position: absolute;
+      right: 18px;
+      top: 14px;
+    }
+
+    span {
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      font-family: $manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: $ls-first;
+      text-align: left;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .dropdown {
+    display: block;
+    width: 100%;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+
+    &.opened {
+      display: block;
+    }
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: $ls-first;
+    padding: 7px;
+    text-transform: uppercase;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+  }
+
+  ul {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-left: 16px;
+    margin-left: -16px;
+
+    @include respond-to(lg) {
+      height: auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(206, 219, 239, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(206, 219, 239, 0.7);
+    }
+
+    li {
+
+      ul {
+        padding-left: 12px;
+
+        a.active {
+          &:before {
+            left: -28px;
+          }
+        }
+      }
+
+      a {
+        color: $comment;
+        font-family: $manrope;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: $ls-second;
+        padding: 7px 6px;
+        position: relative;
+        display: block;
+
+        @include respond-to(lg) {
+          color: $main-text;
+          padding: 7px 0;
+        }
+
+        &.active {
+          @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+
+          @include respond-to(lg) {
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background: none;
+          }
+
+          &:before {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            left: -16px;
+            top: 15px;
+            border-radius: 10px;
+            background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+            z-index: 5;
+
+            @include respond-to(lg) {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

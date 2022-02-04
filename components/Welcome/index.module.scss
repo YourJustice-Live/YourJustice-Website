@@ -1,0 +1,168 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.welcome {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 170px 15px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(197, 240, 248, 0.2) 0%, rgba(218, 183, 250, 0) 100%);
+
+  @include respond-to(sm) {
+    padding: 85px 15px 179px;
+  }
+
+  .anchor {
+    display: block;
+    position: relative;
+    top: -242px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &Header {
+    position: relative;
+    padding-bottom: 37px;
+    margin-bottom: 36px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to(sm) {
+      padding-bottom: 25px;
+      margin-bottom: 24px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 570px;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      background: rgba(206, 219, 239, 0.3);
+
+      @include respond-to(sm) {
+        width: 270px;
+      }
+    }
+
+    h2 {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 12px;
+      text-align: center;
+
+      @include respond-to(sm) {
+        font-size: 40px;
+        line-height: 58px;
+        margin-bottom: 24px;
+      }
+    }
+
+    p {
+      color: rgba(49, 72, 95, 0.7);
+      font-family: $manrope;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: $ls-first;
+      max-width: 614px;
+      text-align: center;
+
+      @inclide respond-to(sm) {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &Text {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: $ls-first;
+    text-align: center;
+    margin-bottom: 36px;
+
+    @include respond-to(sm) {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
+
+  ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    li {
+      margin-right: 24px;
+
+      @include respond-to(sm) {
+        margin-right: 0;
+        margin-bottom: 18px;
+        width: 100%;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .button {
+    padding: 13px 26px;
+    width: 270px;
+
+    @include respond-to(sm) {
+      width: 100%;
+    }
+  }
+
+  .anchorButton {
+    color: #fff;
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    text-align: center;
+    padding: 13px 26px;
+    width: 270px;
+    display: block;
+    background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+    border-radius: 40px;
+
+    @include respond-to(sm) {
+      width: 100%;
+    }
+
+    &:hover {
+      background: linear-gradient(99.67deg, #FFA3B5 -7.44%, #9975E7 111.26%);
+    }
+    &:active {
+      background: linear-gradient(99.67deg, #CC7B8B -7.44%, #7558B4 111.26%);
+    }
+  }
+}

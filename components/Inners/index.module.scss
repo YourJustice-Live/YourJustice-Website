@@ -1,0 +1,255 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 170px 27px;
+  overflow: hidden;
+
+  @include respond-to(sm) {
+    padding: 85px 16px;
+  }
+}
+
+.header {
+  max-width: 868px;
+  margin-bottom: 64px;
+
+  h2 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 36px;
+    text-align: center;
+
+    @include respond-to(sm) {
+      font-size: 40px;
+      line-height: 58px;
+      margin-bottom: 24px;
+    }
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: $ls-first;
+    text-align: center;
+
+    @include respond-to(sm) {
+      font-size: 18px;
+      line-height: 31px;
+    }
+  }
+}
+
+.sections {
+  max-width: 1254px;
+  width: 100%;
+}
+
+.section {
+  min-height: 500px;
+  width: 100%;
+  padding: 70px 20px 20px 70px;
+  position: relative;
+
+  @include respond-to(lg) {
+    min-height: 470px;
+    padding: 50px;
+  }
+  @include respond-to(sm) {
+    min-height: 695px;
+    padding: 18px;
+  }
+
+  figure {
+    position: absolute;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &First {
+    padding-right: 484px;
+    background: linear-gradient(358.42deg, #F0FFF8 14.52%, #FFFDDD 110.45%);
+    border-radius: 46px 46px 0 0;
+
+    @include respond-to(lg) {
+      padding-right: 300px;
+    }
+    @include respond-to(md) {
+      padding-right: 64px;
+    }
+    @include respond-to(sm) {
+      padding: 208px 20px 20px;
+      min-height: 720px;
+    }
+
+    figure {
+      top: 21px;
+      right: 0;
+
+      @include respond-to(lg) {
+        width: 363px;
+        right: -8px;
+        top: 60px;
+      }
+      @include respond-to(md) {
+        width: 240px;
+      }
+      @include respond-to(sm) {
+        width: 211px;
+        top: 0;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &Second {
+    padding-left: 538px;
+    padding-right: 15px;
+    background: linear-gradient(204.78deg, #FDD9FF 3.44%, #CBEEFF 77.5%);
+
+    @include respond-to(lg) {
+      padding-left: 425px;
+    }
+    @include respond-to(md) {
+      padding-left: 230px;
+    }
+    @include respond-to(sm) {
+      padding: 302px 20px 20px;
+      min-height: 670px;
+    }
+
+    figure {
+      top: 0;
+      left: 20px;
+
+      @include respond-to(lg) {
+        width: 469px;
+        left: 0;
+        top: -4px;
+      }
+      @include respond-to(md) {
+        width: 280px;
+      }
+      @include respond-to(sm) {
+        width: 247px;
+        top: 16px;
+        left: 50%;
+        transform: translateX(-40%);
+        transform-origin: center center;
+      }
+    }
+  }
+  &Third {
+    padding-right: 658px;
+    background: linear-gradient(197.34deg, #A6D3FF -31.73%, #B9ECF7 32.89%, #EDFFF1 98.87%);
+    border-radius: 0 0 46px 46px;
+
+    @include respond-to(lg) {
+      padding-right: 15px;
+    }
+    @include respond-to(sm) {
+      padding: 278px 20px 20px;
+      min-height: 600px;
+    }
+
+    figure {
+      top: 30px;
+      right: 22px;
+
+      @include respond-to(lg) {
+        width: 599px;
+        right: 6px;
+        top: 59px;
+      }
+      @include respond-to(md) {
+        width: 440px;
+        right: 0px;
+        top: 78px;
+      }
+      @include respond-to(sm) {
+        width: 298px;
+        top: 28px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  h3 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 5;
+
+    @include respond-to(lg) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    @include respond-to(sm) {
+      font-size: 31px;
+      line-height: 42px;
+    }
+  }
+
+  p, li {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: $ls-first;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 5;
+
+    @include respond-to(lg) {
+      font-size: 18px;
+      line-height: 34px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    @include respond-to(lg) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  ul {
+    margin-bottom: 24px;
+    padding-left: 22px;
+
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  .button {
+    padding: 8px 18px;
+    position: relative;
+    z-index: 5;
+  }
+}

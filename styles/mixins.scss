@@ -1,0 +1,39 @@
+@mixin respond-to($media) {
+
+	@if $media == mobile {@media (max-width: 400px) {@content;}}
+
+	@else if $media == xs {@media (max-width: 480px) {@content;}}
+	@else if $media == sm {@media (max-width: 767px) {@content;}}
+	@else if $media == md {@media (max-width: 991px) {@content;}}
+	@else if $media == lg {@media (max-width: 1199px) {@content;}}
+	@else if $media == desktop {@media (max-width: 1299px) {@content;}}
+	@else {@media (max-width: $media) {@content;}}
+}
+
+@mixin font-face($font-name, $font-path, $font-style, $font-weight) {
+
+	@font-face {
+		font-family: $font-name;
+		src: url('/assets/fonts/' + $font-path + '/' + $font-path + '.eot');
+		src: url('/assets/fonts/' + $font-path + '/' + $font-path + '.eot') format('embedded-opentype'),
+		url('/assets/fonts/' + $font-path + '/' + $font-path + '.woff2') format('woff2'),
+		url('/assets/fonts/' + $font-path + '/' + $font-path + '.woff') format('woff'),
+		url('/assets/fonts/' + $font-path + '/' + $font-path + '.ttf') format('truetype'),
+		url('/assets/fonts/' + $font-path + '/' + $font-path + '.svg##{$font-path}') format('svg');
+    font-style: $font-style;
+    font-weight: $font-weight;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		@font-face {
+			font-family: $font-name;
+			src: url('/assets/fonts/' + $font-path + '/' + $font-path + '.svg##{$font-path}') format('svg');
+		}
+	}
+}
+
+@mixin text-gradient($direction, $start-color, $start-percent, $end-color, $end-percent) {
+	background: linear-gradient($direction, $start-color $start-percent, $end-color $end-percent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

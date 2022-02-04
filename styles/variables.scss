@@ -1,0 +1,34 @@
+// colors
+$main-text: #31485F;
+$white: #fff;
+$comment: #B1C0CF;
+$copy: #6E6E73;
+$quote-check: #92F3BE;
+$error: rgba(245, 76, 76, 1);
+
+$article-text: rgba(49, 72, 95, 0.7);
+
+$table-first: #FB7E9A;
+$table-second: #52D5C8;
+
+$gradient-first-start: #FF6785;
+$gradient-first-end: #744CCC;
+$gradient-second-start: #FFA3B5;
+$gradient-second-end: #9975E7;
+
+$graph-first: #6380DC;
+$graph-second: #794DCC;
+$graph-third: #D0319A;
+$graph-fourth: #A45AA5;
+$graph-fivth: #5A9ADC;
+
+// fonts
+$manrope: 'manrope', sans-serif;
+$aeroport: 'aeroport', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+$kalam: 'kalam', sans-serif;
+$monolisa: 'monolisa', sans-serif;
+@import './yourjustice-variables.scss';
+
+// letter-spacing
+$ls-first: 0.02em;
+$ls-second: 0.04em;

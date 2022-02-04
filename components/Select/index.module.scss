@@ -1,0 +1,106 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 6;
+
+  &.open {
+    z-index: 7;
+
+    div {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: $ls-second;
+    width: 100%;
+    padding: 10px 24px 10px 12px;
+    background: #FFFFFF;
+    border: 1px solid rgba(206, 219, 239, 0.3);
+    border-radius: 12px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 7;
+    position: relative;
+
+    &:after {
+      @extend .if;
+      content: '\e90c';
+      color: #31485F;
+      font-size: 22px;
+      position: absolute;
+      right: 7px;
+      top: 10px;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    span {
+      color: $comment;
+      pointer-events: none;
+    }
+  }
+
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 50px 0 5px;
+    background: #fff;
+    border: 1px solid rgba(206, 219, 239, 0.3);
+    border-radius: 12px;
+    z-index: 6;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    overflow: hidden;
+
+    & > * {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: $ls-second;
+      width: 100%;
+      padding: 7px 12px;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(177, 192, 207, 0.2);
+      }
+    }
+  }
+}
+
+.errorText {
+  color: $error;
+  font-family: $manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: $ls-second;
+  display: block;
+  padding-left: 10px;
+  margin-top: 6px;
+  display: none;
+
+  .error & {
+    display: block;
+  }
+}

@@ -1,0 +1,60 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  padding: 0 27px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -12px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1254px;
+  width: 100%;
+  padding: 85px 0;
+
+  @include respond-to(sm) {
+    padding: 42px 0;
+  }
+}
+
+.header {
+  margin-bottom: 64px;
+  width: 100%;
+
+  h2 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 7px;
+
+    @include respond-to(sm) {
+      font-size: 40px;
+      line-height: 58px;
+      margin-bottom: 12px;
+    }
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: $ls-first;
+    text-align: center;
+  }
+}

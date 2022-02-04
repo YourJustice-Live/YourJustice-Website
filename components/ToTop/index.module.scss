@@ -1,0 +1,30 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  position: fixed; z-index: 3;
+  right: 40px;
+  bottom: 60px;
+  display: block;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+
+  @include respond-to(sm) {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .icon {
+    @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-size: 40px;
+  }
+}

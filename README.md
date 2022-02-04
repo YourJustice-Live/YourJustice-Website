@@ -18,7 +18,7 @@ This project follows the [all-contributors](https://allcontributors.org/docs/en/
 
 ### Submit an issue
 
-- Create a [new issue](https://github.com/YourJustice-Live/yourjustice-live-website/issues/new).
+- Create a [new issue](https://github.com/YourJustice-Live/landing/issues/new).
 - Comment on the issue (if you'd like to be assigned to it) - that way [our team can assign the issue to you](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
 
 ### Fork the repository (repo)
@@ -36,7 +36,7 @@ If you're ready to contribute and create your PR, it will help to set up a local
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```
-$ git clone git@github.com:[your_github_handle]/yourjustice-live-website.git && cd yourjustice-live-website
+$ git clone git@github.com:[your_github_handle]/landing.git && cd landing
 ```
 
 If you've already forked the repo, you'll want to ensure your fork is configured and that it's up to date. This will save you the headache of potential merge conflicts.
@@ -44,7 +44,7 @@ If you've already forked the repo, you'll want to ensure your fork is configured
 To [configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork):
 
 ```
-$ git remote add upstream https://github.com/YourJustice-Live/yourjustice-live-website.git
+$ git remote add upstream https://github.com/YourJustice-Live/landing.git
 ```
 
 To [sync your fork with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
@@ -92,7 +92,7 @@ $ git push
 
 ### Submit your PR
 
-- After your changes are committed to your GitHub fork, submit a pull request (PR) to the `dev` branch of the `YourJustice-Live/yourjustice-live-website.git` repo
+- After your changes are committed to your GitHub fork, submit a pull request (PR) to the `dev` branch of the `YourJustice-Live/landing.git` repo
 - In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))
   - ex. `Updates out of date content [Fixes #1234]`
 - Why not say hi and draw attention to your PR in [our discord server](https://discord.gg/sqbuwGbU)?

@@ -1,0 +1,341 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+
+.wrapper {
+  padding: 39px 27px 120px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  background: rgba(243, 247, 255, 0.5);
+
+  @include respond-to(lg) {
+    padding: 73px 27px 103px;
+  }
+  @include respond-to(sm) {
+    padding: 49px 18px 70px;
+  }
+}
+
+.blockquote {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  color: $main-text;
+  font-family: $manrope;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 49px;
+  margin-bottom: 70px;
+
+  @include respond-to(sm) {
+    font-size: 31px;
+    line-height: 42px;
+    margin-bottom: 51px;
+  }
+}
+
+.container {
+  max-width: 1230px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  @include respond-to(sm) {
+    flex-direction: column;
+  }
+}
+
+.person {
+  margin-right: 86px;
+  padding-top: 10px;
+
+  @include respond-to(lg) {
+    margin-right: 4px;
+  }
+  @include respond-to(sm) {
+    order: 1;
+    margin-right: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  figure {
+    width: 158px;
+    height: 158px;
+    border-radius: 80px;
+    overflow: hidden;
+    margin-bottom: 21px;
+
+    @include respond-to(sm) {
+      width: 110px;
+      height: 110px;
+      margin-bottom: 12px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  span {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: $ls-second;
+  }
+
+  &Name {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    margin-bottom: 6px;
+  }
+
+  &Position {
+    color: $comment;
+    font-family: $manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: $ls-second;
+  }
+}
+
+.quotes {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include respond-to(sm) {
+    margin-bottom: 108px;
+  }
+}
+
+.quote {
+  padding: 0 36px 0 26px;
+  margin-bottom: 31px;
+  position: relative;
+
+  @include respond-to(lg) {
+    padding-right: 42px;
+  }
+  @include respond-to(sm) {
+    order: 0;
+    padding: 0;
+    margin-bottom: 68px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &Left, &Right {
+    position: absolute;
+
+    img {
+      @include respond-to(sm) {
+        width: 11px;
+      }
+    }
+  }
+  &Left {
+    left: 0;
+    top: 0;
+
+    @include respond-to(sm) {
+      top: -19px;
+    }
+  }
+  &Right {
+    right: 0;
+    bottom: 0;
+
+    @include respond-to(sm) {
+      bottom: -19px;
+    }
+  }
+
+  ul {
+    @include respond-to(sm) {
+      padding-right: 41px;
+    }
+
+    li {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 46px;
+      letter-spacing: $ls-first;
+      line-height: 46px;
+      padding-left: 55px;
+      position: relative;
+      margin-bottom: 7px;
+
+      @include respond-to(lg) {
+        font-size: 28px;
+        line-height: 38px;
+      }
+      @include respond-to(sm) {
+        font-size: 24px;
+        line-height: 32px;
+        padding-left: 24px;
+      }
+
+      &:last-child {
+        &:before {
+          content: none;
+        }
+      }
+
+      &:before {
+        @extend .if;
+        content: '\e90f';
+        color: $quote-check;
+        font-size: 46px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include respond-to(sm) {
+          content: '\e911';
+          font-size: 18px;
+          top: 5px;
+        }
+      }
+
+      span {
+        margin-left: 16px;
+
+        @include respond-to(sm) {
+          font-size: 18px;
+          line-height: 25px;
+          white-space: nowrap;
+          position: absolute;
+          margin-left: 0;
+          bottom: -10px;
+          left: 158px;
+          transform: translateY(100%);
+          width: 158px;
+        }
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 46px;
+          height: 46px;
+          margin-right: 12px;
+          background: url('/assets/images/blockquote-arrow.svg') center center /contain no-repeat;
+          margin-bottom: -10px;
+
+          @include respond-to(lg) {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+          @include respond-to(sm) {
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+            margin-bottom: 0;
+            position: relative;
+            top: 2px;
+            background: url('/assets/images/blockquote-arrow-sm.svg') center center /contain no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+  .text {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: $ls-first;
+    max-width: 867px;
+
+    @include respond-to(sm) {
+      font-size: 18px;
+      line-height: 35px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  .postscriptum {
+    @include text-gradient(99.67deg, #FF6785, -7.44%, #744CCC, 111.26%);
+    font-family: $kalam;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: $ls-first;
+    position: absolute;
+    bottom: -20px;
+    left: 220px;
+    transform: translateY(100%);
+
+    @include respond-to(lg) {
+      bottom: -24px;
+    }
+    @include respond-to(md) {
+      font-size: 28px;
+    }
+    @include respond-to(sm) {
+      font-size: 21px;
+      line-height: 34px;
+      white-space: nowrap;
+      left: 98px;
+      bottom: -37px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 182px;
+      height: 86px;
+      position: absolute;
+      left: -15px;
+      top: -57px;
+      transform: translateX(-100%);
+      background: url('/assets/images/blockquote-arrow-2.svg') center center no-repeat;
+
+      @include respond-to(sm) {
+        width: 99px;
+        height: 78px;
+        left: -5px;
+        top: -64px;
+        background: url('/assets/images/blockquote-arrow-2-sm.svg') center center no-repeat;
+      }
+    }
+  }
+
+  &Icon {
+    color: $comment;
+    font-size: 12px;
+
+    @include respond-to(sm) {
+      font-size: 9px;
+    }
+  }
+}

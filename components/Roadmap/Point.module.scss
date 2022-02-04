@@ -1,0 +1,287 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+.wrapper {
+  margin-right: 53px;
+  position: relative;
+
+  @include respond-to(lg) {
+    margin-right: 10px;
+  }
+  @include respond-to(sm) {
+    margin-right: 0;
+    margin-left: 66px;
+    margin-bottom: 24px;
+    border: solid 1px #fff;
+    border-radius: 30px;
+  }
+
+  &.opened {
+    @include respond-to(sm) {
+      margin-left: 0;
+      padding: 12px;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 20px;
+    top: -38px;
+
+    @include respond-to(sm) {
+      content: none;
+    }
+  }
+
+  &:nth-child(1) {
+    color: rgba(99, 128, 220, 1);
+    border-color: rgba(99, 128, 220, 1);
+
+    &:before {
+      background: #6380DC;
+    }
+
+    .roadpointHeaderImage {
+      left: -3px;
+
+      @include respond-to(sm) {
+        left: 0;
+        width: 34px;
+        height: 30px;
+      }
+
+      img {
+        @include respond-to(sm) {
+          position: absolute;
+          left: -19px;
+          top: -14px;
+        }
+      }
+    }
+  }
+  &:nth-child(2) {
+    color: rgba(220, 106, 209, 1);
+    border-color: rgba(218, 99, 220, 1);
+
+    &:before {
+      background: #DC6AD1;
+    }
+
+    .roadpointHeaderImage {
+      @include respond-to(sm) {
+        width: 60px;
+        height: 34px;
+      }
+
+      img {
+        @include respond-to(sm) {
+          position: absolute;
+          left: -19px;
+          top: -14px;
+        }
+      }
+    }
+  }
+  &:nth-child(3) {
+    color: rgba(233, 160, 127, 1);
+    border-color: rgba(233, 160, 127, 1);
+
+    &:before {
+      background: #E9A07F;
+    }
+
+    .roadpointHeaderImage {
+      @include respond-to(sm) {
+        width: 48px;
+        height: 47px;
+      }
+
+      img {
+        @include respond-to(sm) {
+          transform: scale(0.79661);
+          position: absolute;
+          left: -25px;
+          top: -20px;
+        }
+      }
+    }
+  }
+  &:nth-child(4) {
+    color: rgba(208, 217, 134, 1);
+    border-color: rgba(208, 217, 134, 1);
+
+    &:before {
+      background: #D0D986;
+    }
+
+    .roadpointHeaderImage {
+      left: -33px;
+
+      @include respond-to(sm) {
+        width: 60px;
+        height: 47px;
+      }
+
+      img {
+        @include respond-to(sm) {
+          transform: scale(0.79661);
+          position: absolute;
+          left: 6px;
+          top: -20px;
+        }
+      }
+    }
+  }
+  &:nth-child(5) {
+    color: rgba(5, 181, 161, 1);
+    border-color: rgba(5, 181, 161, 1);
+
+    &:before {
+      background: #05B5A1;
+    }
+
+    .roadpointHeaderImage {
+      left: -33px;
+
+      @include respond-to(sm) {
+        width: 60px;
+        height: 67px;
+      }
+
+      img {
+        @include respond-to(sm) {
+          transform: scale(0.79762);
+          position: absolute;
+          left: 6px;
+          top: -22px;
+        }
+      }
+    }
+  }
+
+  & > ul {
+    @include respond-to(sm) {
+      margin-left: 15px;
+    }
+  }
+}
+.roadpoint {
+
+  &Image {
+    display: none;
+    position: absolute;
+    left: -85px;
+    top: -12px;
+
+    @include respond-to(sm) {
+      display: block;
+    }
+
+    .opened & {
+      @include respond-to(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &Header {
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: $ls-first;
+    margin-bottom: 15px;
+
+    @include respond-to(lg) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    @include respond-to(md) {
+      font-size: 16px;
+    }
+    @include respond-to(sm) {
+      font-size: 18px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      padding: 11px 17px;
+    }
+
+    .opened & {
+      @include respond-to(sm) {
+        padding: 6px;
+      }
+    }
+
+    span {
+      white-space: nowrap;
+      width: 100%;
+
+      @include respond-to(lg) {
+        white-space: initial;
+      }
+
+      br {
+        @include respond-to(sm) {
+          display: none;
+        }
+      }
+
+      em {
+        @include respond-to(sm) {
+          display: none;
+        }
+
+        .opened & {
+          @include respond-to(sm) {
+            display: inline;
+          }
+        }
+      }
+    }
+
+    &Image {
+      position: absolute;
+      left: -18px;
+      top: -20px;
+      transform: translateY(-100%);
+
+      @include respond-to(sm) {
+        display: none;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-right: 10px;
+        transform: translateY(0);
+        flex-shrink: 0;
+      }
+
+      .opened & {
+        @include respond-to(sm) {
+          display: block;
+        }
+      }
+    }
+
+    .roadpointHeaderIcon {
+      font-size: 24px;
+      display: none;
+      margin-left: 6px;
+
+      @include respond-to(sm) {
+        display: block;
+      }
+    }
+  }
+}

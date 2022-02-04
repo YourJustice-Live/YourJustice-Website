@@ -1,0 +1,194 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}.eot?7quxev');
+  src:  url('#{$icomoon-font-path}.eot?7quxev#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}.ttf?7quxev') format('truetype'),
+    url('#{$icomoon-font-path}.woff?7quxev') format('woff'),
+    url('#{$icomoon-font-path}.svg?7quxev##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.if {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.if-chat {
+  &:before {
+    content: $if-chat;
+  }
+}
+.if-arrow-circle-up {
+  &:before {
+    content: $if-arrow-circle-up;
+  }
+}
+.if-github {
+  &:before {
+    content: $if-github;
+  }
+}
+.if-error {
+  &:before {
+    content: $if-error;
+  }
+}
+.if-chevron-left {
+  &:before {
+    content: $if-chevron-left;
+  }
+}
+.if-chevron-bottom {
+  &:before {
+    content: $if-chevron-bottom;
+  }
+}
+.if-corner-top {
+  &:before {
+    content: $if-corner-top;
+  }
+}
+.if-corner-bottom {
+  &:before {
+    content: $if-corner-bottom;
+  }
+}
+.if-external-link {
+  &:before {
+    content: $if-external-link;
+  }
+}
+.if-search {
+  &:before {
+    content: $if-search;
+  }
+}
+.if-discord {
+  &:before {
+    content: $if-discord;
+  }
+}
+.if-profile {
+  &:before {
+    content: $if-profile;
+  }
+}
+.if-phone {
+  &:before {
+    content: $if-phone;
+  }
+}
+.if-message {
+  &:before {
+    content: $if-message;
+  }
+}
+.if-send {
+  &:before {
+    content: $if-send;
+  }
+}
+.if-chevron-right {
+  &:before {
+    content: $if-chevron-right;
+  }
+}
+.if-instagram {
+  &:before {
+    content: $if-instagram;
+  }
+}
+.if-blockquote-check-sm {
+  &:before {
+    content: $if-blockquote-check-sm;
+  }
+}
+.if-youtube {
+  &:before {
+    content: $if-youtube;
+  }
+}
+.if-wallet {
+  &:before {
+    content: $if-wallet;
+  }
+}
+.if-twitter {
+  &:before {
+    content: $if-twitter;
+  }
+}
+.if-telegram {
+  &:before {
+    content: $if-telegram;
+  }
+}
+.if-tag {
+  &:before {
+    content: $if-tag;
+  }
+}
+.if-quote-right {
+  &:before {
+    content: $if-quote-right;
+  }
+}
+.if-quote-left {
+  &:before {
+    content: $if-quote-left;
+  }
+}
+.if-medium {
+  &:before {
+    content: $if-medium;
+  }
+}
+.if-linkedin {
+  &:before {
+    content: $if-linkedin;
+  }
+}
+.if-language-arrow {
+  &:before {
+    content: $if-language-arrow;
+  }
+}
+.if-form-arrow {
+  &:before {
+    content: $if-form-arrow;
+  }
+}
+.if-facebook {
+  &:before {
+    content: $if-facebook;
+  }
+}
+.if-blockquote-check {
+  &:before {
+    content: $if-blockquote-check;
+  }
+}
+.if-bag {
+  &:before {
+    content: $if-bag;
+  }
+}
+.if-schedule-arrow {
+  &:before {
+    content: $if-schedule-arrow;
+  }
+}

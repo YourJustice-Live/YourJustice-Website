@@ -1,0 +1,49 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+
+.link {
+  @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+  font-family: $manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: $ls-first;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 25px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+  }
+
+  &:hover {
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.inline {
+  @extend .link;
+  @include text-gradient(99.67deg, #D15E9C, -7.44%, #BB59A7, 111.26%);
+  display: inline;
+  margin: 0;
+
+  &:before {
+    content: none !important;
+    background: linear-gradient(99.67deg, #D15E9C -7.44%, #BB59A7 111.26%);
+  }
+  &:hover {
+    &:before {
+      content: '' !important;
+    }
+  }
+}
