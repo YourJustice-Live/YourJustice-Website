@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
   const {locale} = context
   const token = process.env.GITHUB_ACCESS_TOKEN
   const result = await getData('', 'whitepaper', locale)
-  const res = await getLastUpdateDate(token, `README.md`)
+  const res = await getLastUpdateDate(token, `data/whitepaper/${locale}.md`)
 
   return {
     props: {result, res}
