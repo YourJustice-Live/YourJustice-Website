@@ -1,0 +1,111 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  position: relative;
+}
+.current {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 0;
+  height: 27px;
+  background: none;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+    background: url('/assets/images/language-arrow.svg') center center no-repeat;
+  }
+
+  img {
+    pointer-events: none;
+    width: 22px;
+  }
+}
+
+.list {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 270px;
+  padding: 12px;
+  background: #F7F9FC;
+  border-radius: 12px;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+
+  &:before {
+    // TODO: сделать стрелочку сверху
+  }
+
+  &.top {
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+  &.opened {
+    display: block;
+    top: calc(100% + 10px);
+    opacity: 1;
+    pointer-events: auto;
+
+    &.top {
+      top: -10px;
+    }
+  }
+
+  li {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    border-bottom: solid 1px rgba(206, 219, 239, 0.6);
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    button {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: $ls-second;
+      display: flex;
+      align-items: center;
+      background: none;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      span {
+        display: inline-block;
+        padding: 9px 12px;
+        margin-left: 6px;
+        pointer-events: none;
+      }
+
+      img {
+        width: 22px;
+      }
+    }
+  }
+}

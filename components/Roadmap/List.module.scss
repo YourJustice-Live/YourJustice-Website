@@ -1,0 +1,88 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  padding-left: 26px;
+  padding-top: 16px;
+  position: relative;
+  overflow: hidden;
+
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  &.opened {
+    @include respond-to(sm) {
+      display: block;
+    }
+  }
+}
+
+.list {
+  &Item {
+    margin-bottom: 12px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+      position: initial;
+
+      &:before {
+        content: none;
+      }
+    }
+
+    &:before {
+      content:"";
+      position:absolute;
+      width: 14px;
+      height: 30px;
+      left: -14px;
+      top: -14px;
+      border-radius: 0 0 0 8px;
+      padding: 0 0 1px 1px;
+      background: linear-gradient(180deg, #5880AE 10.35%, #7D7BEF 46.3%, #DD94FF 77.35%, #EA77AE 104.58%);
+      -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 5;
+    }
+  }
+
+  &Text {
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 3px 6px;
+
+    @include respond-to(sm) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.branch {
+  position: absolute;
+  width: 14px;
+  top: -4px;
+  left: 12px;
+  border-radius: 0 0 0 8px;
+  padding: 0 0 1px 1px;
+  background: linear-gradient(180deg, #5880AE 10.35%, #7D7BEF 46.3%, #DD94FF 77.35%, #EA77AE 104.58%);
+  -webkit-mask:
+  linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 10;
+}

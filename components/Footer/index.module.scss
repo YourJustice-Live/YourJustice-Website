@@ -1,0 +1,266 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  padding: 0 27px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  background: rgba(220, 230, 251, 1);
+  flex-shrink: 0;
+
+  position: fixed; bottom: 0; left: 0; width: 100%;
+}
+
+.container {
+  padding: 66px 0 24px;
+  max-width: 1255px;
+  width: 100%;
+
+  @include respond-to(sm) {
+    padding-top: 48px;
+    padding-bottom: 12px;
+  }
+}
+
+.siteLinks {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 160px;
+
+  @include respond-to(lg) {
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+  }
+  @include respond-to(sm) {
+    margin-bottom: 91px;
+  }
+}
+
+.contacts {
+
+  @include respond-to(sm) {
+    order: 1;
+    margin-bottom: 48px;
+  }
+
+  .logo {
+    margin-bottom: 48px;
+  }
+
+  h3 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: $ls-second;
+    padding: 7px 0;
+    margin-bottom: 24px;
+  }
+
+  ul {
+    li {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a {
+    color: rgba(21, 47, 77, 0.8);
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: $ls-first;
+    text-align: left;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+
+    &.profile {
+      font-weight: 700;
+    }
+
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .icon {
+    color: rgba(21, 47, 77, 0.8);
+    font-size: 22px;
+    margin-right: 12px;
+  }
+}
+
+.links {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond-to(sm) {
+    width: 100%;
+    order: 0;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+  }
+  @include respond-to(xs) {
+    flex-direction: column;
+  }
+}
+
+.linksGroup {
+  margin-right: 64px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @include respond-to(sm) {
+    margin-right: 24px;
+  }
+  @include respond-to(xs) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: $ls-second;
+    margin-bottom: 6px;
+    padding: 7px 12px 7px 0;
+  }
+
+  ul {
+
+    li {
+
+      a {
+        color: $main-text;
+        font-family: $manrope;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: $ls-second;
+        padding: 7px 12px 7px 0;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.socials {
+  @include respond-to(lg) {
+    width: 100%;
+    margin-top: 72px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  @include respond-to(sm) {
+    margin-top: 0;
+    order: 2;
+  }
+}
+
+.copy {
+  padding-top: 6px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 1px rgba(206, 219, 239, 1);
+  position: relative;
+
+  &Links {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+
+      @include respond-to(sm) {
+        order: 0;
+        margin-bottom: 6px;
+      }
+
+      li {
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    span, a {
+      font-family: $manrope;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: $ls-first;
+    }
+
+    span {
+      color: rgba(110, 110, 115, 1);
+      margin-right: 30px;
+
+      @include respond-to(sm) {
+        order: 1;
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $main-text;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.language {
+  @include respond-to(sm) {
+    position: absolute;
+    right: 0;
+    top: -16px;
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,30 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+
+  img {
+    margin-right: 6px;
+  }
+
+  p {
+    color: rgba(49, 72, 95, 0.7);
+    font-family: $manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
+    a {
+      color: #C45BA3;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

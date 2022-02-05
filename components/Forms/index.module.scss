@@ -1,0 +1,126 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  padding: 0 15px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  background: url('/assets/images/join-us.png') right bottom no-repeat;
+
+  @include respond-to(sm) {
+    background: none;
+  }
+}
+
+.container {
+  padding: 103px 0;
+  max-width: 1255px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include respond-to(sm) {
+    padding: 43px 0 85px;
+  }
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -72px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 66px;
+
+  h2 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+
+    @include respond-to(sm) {
+      font-size: 40px;
+      line-height: 58px;
+      text-align: center;
+    }
+  }
+}
+
+.forms {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-end;
+
+  @include respond-to(sm) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.buttons {
+  margin-left: 195px;
+
+  @include respond-to(sm) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    line-height: 24px;
+    margin-right: 6px;
+
+    &.discord {
+      font-size: 14px;
+    }
+    &.chat {
+      font-size: 22px;
+    }
+  }
+
+  .button {
+    color: #fff;
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    text-align: center;
+    display: block;
+    width: 155px;
+    padding: 13px 18px;
+    background: linear-gradient(99.67deg, #FFA3B5 -7.44%, #9975E7 111.26%);
+    border-radius: 30px;
+
+    @include respond-to(sm) {
+      width: 100%;
+    }
+
+    &:hover {
+      background: linear-gradient(99.67deg, #FF6785 -7.44%, #744CCC 111.26%);
+    }
+
+    &:active {
+      background: linear-gradient(99.67deg, #CC7B8B -7.44%, #7558B4 111.26%);
+    }
+  }
+
+  span {
+    vertical-align: top;
+  }
+}

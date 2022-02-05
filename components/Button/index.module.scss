@@ -1,0 +1,179 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $manrope;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 18px 12px;
+  position: relative;
+  display: inline-block;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(99.67deg, rgba(255, 103, 133, 0) -7.44%, rgba(116, 76, 204, 0) 111.26%);
+  transition: background 0.2s ease;
+
+  span {
+    @include text-gradient(to right, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  &:before {
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius:50px;
+    padding: 1px;
+    background:linear-gradient(to right, $gradient-first-start -10.08%, $gradient-first-end 78.68%);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  &:after {
+    @extend .if;
+    content: '\e90e';
+    @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5px;
+    pointer-events: none;
+    vertical-align: bottom;
+  }
+
+  &:hover {
+    background: linear-gradient(99.67deg, rgba(255, 103, 133, 1) -7.44%, rgba(116, 76, 204, 1) 111.26%);
+
+    &:before {
+      background: linear-gradient(102.02deg, rgba(204, 123, 139, 0) -10.08%, rgba(117, 88, 180, 0) 78.68%);
+    }
+    &:after {
+      -webkit-text-fill-color: #fff;
+    }
+
+    span {
+      -webkit-text-fill-color: #fff;
+    }
+  }
+
+  &:active {
+    background: none;
+
+    &:before {
+      background: linear-gradient(102.02deg, rgba(204, 123, 139, 1) -10.08%, rgba(117, 88, 180, 1) 78.68%);
+    }
+    &:after {
+      @include text-gradient(230deg, #CC7B8B, -57.03%, #7558B4, 140.3%);
+    }
+
+    span {
+      @include text-gradient(to right, #CC7B8B, -7.44%, #7558B4, 111.26%);
+    }
+  }
+
+  &.second {
+    @include text-gradient(to right, $gradient-second-start, -7.44%, $gradient-second-end, 111.26%);
+
+    &:before {
+      background:linear-gradient(to right, $gradient-second-start -10.08%, $gradient-second-end 78.68%);
+    }
+  }
+
+  &.fill {
+    background: linear-gradient(99.67deg, #FFA3B5 -7.44%, #9975E7 111.26%);
+
+    span {
+      color: #fff;
+      -webkit-text-fill-color: initial;
+    }
+
+    &:before, &:after {
+      content: none;
+    }
+
+    &:hover {
+      background: linear-gradient(99.67deg, #FF6785 -7.44%, #744CCC 111.26%);
+    }
+
+    &:active {
+      background: linear-gradient(99.67deg, #CC7B8B -7.44%, #7558B4 111.26%);
+
+      span {
+        color: #fff;
+        -webkit-text-fill-color: initial;
+      }
+    }
+  }
+
+  &.disabled, &.fill.disabled {
+    -webkit-text-fill-color: $comment;
+    background: rgba(206, 219, 239, 0.3);
+    pointer-events: none;
+    &:before {
+      content: none;
+    }
+    &:after {
+      border-color: $comment;
+      border-image: none;
+    }
+  }
+
+  &.reverse {
+    &:hover {
+      &:before {
+        -webkit-text-fill-color: #fff;
+      }
+    }
+
+    &:active {
+      &:before {
+        @include text-gradient(230deg, #CC7B8B, -57.03%, #7558B4, 140.3%);
+      }
+    }
+
+    &:before {
+      @extend .if;
+      content: '\e91b';
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 5px;
+      pointer-events: none;
+      vertical-align: bottom;
+      transform: rotate(180deg);
+      position: relative;
+      width: auto;
+      height: auto;
+      -webkit-mask: none;
+    }
+
+    &:after {
+      content:"";
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border-radius:50px;
+      padding: 1px;
+      background:linear-gradient(to right, $gradient-first-start -10.08%, $gradient-first-end 78.68%);
+      -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      margin-left: 0;
+    }
+  }
+}

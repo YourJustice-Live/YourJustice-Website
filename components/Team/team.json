@@ -1,0 +1,177 @@
+{
+  "team": [
+    {
+      "head": "Co-Founders",
+      "members": [
+        {
+          "name": "Timur Artemev",
+          "ava": "/assets/images/timur-artemev.png",
+          "position": "Co-founder & Ideologist",
+          "socials": [
+            {
+              "icon": "twitter",
+              "src": "https://twitter.com/atv2100"
+            },
+            {
+              "icon": "linkedin",
+              "src": "https://www.linkedin.com/in/timurartemev/"
+            }
+          ]
+        },
+        {
+          "name": "Andrey Panferov",
+          "ava": "/assets/images/andrey-panferov.png",
+          "position": "Co-founder & CEO",
+          "socials": [
+            {
+              "icon": "twitter",
+              "src": "https://twitter.com/andre1panferov"
+            },
+            {
+              "icon": "linkedin",
+              "src": "https://www.linkedin.com/in/andreypnfrv/"
+            }
+          ]
+        },
+        {
+          "name": "<img src='/assets/images/svg_volodya.svg' />",
+          "ava": "/assets/images/vladimir-r.png"
+        },
+        {
+          "name": "Pion Medvedeva",
+          "ava": "/assets/images/pion-medvedeva.png",
+          "position": "Co-founder & Ontologist",
+          "socials": [
+            {
+              "icon": "facebook",
+              "src": "https://www.facebook.com/prapion.me"
+            },
+            {
+              "icon": "telegram",
+              "src": "https://t.me/ontologics"
+            }
+          ]
+        },
+        {
+          "name": "Lena Rantsevich",
+          "ava": "/assets/images/lena-rantsevich.png",
+          "position": "Co-founder & CMO",
+          "socials": [
+            {
+              "icon": "facebook",
+              "src": "https://www.facebook.com/rantsevich.e"
+            },
+            {
+              "icon": "linkedin",
+              "src": "https://www.linkedin.com/in/lena-rantsevich-428609/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "head": "Team",
+      "members": [
+        {
+          "name": "Ladislas",
+          "ava": "/assets/images/ladislas.png",
+          "position": "Art-Director"
+        },
+        {
+          "name": "Gleb Sovin",
+          "ava": "/assets/images/glev-sovin.png",
+          "position": "UI/UX designer"
+        },
+        {
+          "name": "Gleb Kachalkin",
+          "ava": "/assets/images/gleb-kachalkin.png",
+          "position": "Designer"
+        },
+        {
+          "name": "Ksenia Matveeva",
+          "ava": "/assets/images/ksenia-matveeva.png",
+          "position": "Lawyer"
+        },
+        {
+          "name": "Ilya Braude - Zolotarev",
+          "ava": "/assets/images/ilya-braude-zolotarev.png",
+          "position": "Ontologist"
+        },
+        {
+          "name": "Maksym Dermenzhy",
+          "ava": "/assets/images/maksym-dermenzhy.png",
+          "position": "Assistant"
+        },
+        {
+          "name": "Victoria Musaverova",
+          "ava": "/assets/images/victoria-musaverova.png",
+          "position": "Assistant"
+        },
+        {
+          "name": "Oleg Korzhanov",
+          "ava": "/assets/images/oleg-korzhanov.png",
+          "position": "Node JS Developer"
+        },
+        {
+          "name": "Dmitriy",
+          "ava": "/assets/images/dmitriy.png",
+          "position": "Node JS Developer"
+        },
+        {
+          "name": "Sarooj Bukhari",
+          "ava": "/assets/images/sarooj-bukhari.png",
+          "position": "Front End <br />Developer(React JS)"
+        },
+        {
+          "name": "Anton Petrov",
+          "ava": "/assets/images/anton-petrov.png",
+          "position": "Accountant"
+        },
+        {
+          "name": "Alex Shumigay",
+          "ava": "/assets/images/alex-shumigay.png",
+          "position": "Archivarius"
+        },
+        {
+          "name": "Vadim Alexeev",
+          "ava": "/assets/images/vadim-alexeev.png",
+          "position": "Web3 Architect"
+        }
+      ]
+    },
+    {
+      "head": "Advisory",
+      "members": [
+        {
+          "name": "Ksenia Shuravko",
+          "ava": "/assets/images/ksenia-shuravko.png"
+        },
+        {
+          "name": "Danila Medvedev",
+          "ava": "/assets/images/danila-medvedev.png"
+        },
+        {
+          "name": "Andrey Voronkov",
+          "ava": "/assets/images/andrey-voronkov.png"
+        }
+      ]
+    },
+    {
+      "head": "Ambassadors",
+      "members": [
+        {
+          "name": "Janina Lowisz",
+          "ava": "/assets/images/janina-lowisz.png"
+        },
+        {
+          "name": "Rod Cook",
+          "ava": "/assets/images/rod-cook.png"
+        },
+        {
+          "name": "Michael Seidel",
+          "ava": "/assets/images/michael-seidel.png"
+        }
+      ]
+    }
+  ]
+}

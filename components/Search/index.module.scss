@@ -1,0 +1,40 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  position: relative;
+  margin-bottom: 36px;
+
+  form {
+
+    input {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: $ls-second;
+      width: 100%;
+      padding: 7px 41px 7px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(206, 219, 239, 0.3);
+
+      &::placeholder {
+        color: $comment;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      background: none;
+      cursor: pointer;
+    }
+
+    .icon {
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      font-size: 22px;
+    }
+  }
+}

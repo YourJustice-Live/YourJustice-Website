@@ -1,0 +1,7 @@
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+
+.icon {
+  @extend .if;
+  display: inline-block;
+}

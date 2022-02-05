@@ -1,0 +1,227 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+$parallax-perspective: 8;
+
+.banner {
+  position: relative;
+  overflow: hidden;
+
+  &Parallax {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    perspective: $parallax-perspective * 1px;
+    perspective-origin: 0%;
+
+    & > * {
+      transform-origin: 0 0;
+    }
+
+    .ocean {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url('/assets/images/ocean.png') left center no-repeat;
+      background-size: cover;
+    }
+
+    .drone {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('/assets/images/drone.png') right top 40% no-repeat;
+      background-size: cover;
+    }
+
+    .beach {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('/assets/images/beach.png') left bottom no-repeat;
+    }
+
+    .statue {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('/assets/images/statue.png') left bottom no-repeat;
+    }
+
+    .rock {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('/assets/images/rock.png') left bottom no-repeat;
+    }
+
+    .peoples {
+      // display: block;
+      // width: 100%;
+      // height: 100%;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // transform: translateZ(-15px) scale(calc(($parallax-perspective - (-15)) / $parallax-perspective));
+      // background: url('/assets/images/peoples.png') right -70px top 50% no-repeat;
+      // background-size: 85%;
+      // background-attachment: fixed;
+    }
+
+    .tree {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('/assets/images/tree.png') left center no-repeat;
+    }
+  }
+
+  &Container {
+    padding: 130px 0 273px;
+    margin-top: 72px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    // background: url('/assets/images/homeBanner.jpg') center center / cover no-repeat;
+    //
+    // @include respond-to(lg) {
+    //   padding: 140px 15px 290px;
+    //   background: url('/assets/images/homeBanner-md.jpg') center center / cover no-repeat;
+    // }
+    // @include respond-to(sm) {
+    //   background: url('/assets/images/homeBanner-sm.jpg') center center / cover no-repeat;
+    // }
+  }
+
+  &Content {
+    max-width: 735px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      font-family: $manrope;
+      font-weight: 700;
+      font-size: 90px;
+      line-height: 123px;
+      margin-bottom: 12px;
+
+      @include respond-to(lg) {
+        font-size: 70px;
+        line-height: 96px;
+      }
+      @include respond-to(sm) {
+        font-size: 48px;
+        line-height: 66px;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: $ls-first;
+      text-align: center;
+      margin-bottom: 48px;
+
+      @include respond-to(lg) {
+        font-size: 21px;
+        line-height: 32px;
+      }
+      @include respond-to(lg) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+
+    .button {
+      width: 219px;
+    }
+  }
+
+  &Footer {
+    position: absolute;
+    bottom: 0;
+    right: 93px;
+    z-index: 10;
+
+    @include respond-to(sm) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    ul {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px 12px 0 0;
+
+      @include respond-to(sm) {
+        flex-direction: column;
+      }
+
+      li {
+        @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+        font-family: $manrope;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+        margin-right: 13px;
+        white-space: nowrap;
+
+        @include respond-to(sm) {
+          margin-right: 0;
+          padding-bottom: 6px;
+          margin-bottom: 6px;
+          border-bottom: solid 1px #fff;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+@function parallax-scale-factor($z-distance) {
+  @return ($parallax-perspective  -  $z-distance) / $parallax-perspective;
+}

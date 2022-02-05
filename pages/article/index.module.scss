@@ -1,0 +1,133 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  padding: 120px 27px 110px; margin-bottom: 450px;
+
+  position: relative; z-index: 2; background: white;
+
+  @include respond-to(sm) {
+    padding: 48px 18px 110px;
+  }
+
+  .button {
+    padding: 13px 70px;
+    margin-bottom: 48px;
+
+    @include respond-to(lg) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: stretch;
+
+  max-width: 1308px;
+  margin: 0 auto;
+
+  @include respond-to(lg) {
+    display: block;
+    padding-right: 249px;
+  }
+  @include respond-to(md) {
+    padding-right: 149px;
+  }
+  @include respond-to(sm) {
+    padding-right: 0;
+  }
+}
+
+.sidebar {
+  width: 398px;
+  flex-shrink: 0;
+  margin-right: 137px;
+
+  @include respond-to(lg) {
+    display: block;
+  }
+  @include respond-to(sm) {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: right;
+    margin-bottom: 55px;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 110px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include respond-to(lg) {
+    top: 0;
+    position: relative;
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+.content {
+  padding-top: 98px;
+
+  @include respond-to(lg) {
+    padding-top: 0;
+  }
+}
+
+.postscriptum {
+  padding: 32px 15px 32px 184px;
+  margin-top: 36px;
+  background: rgba(226, 252, 229, 1);
+  border-radius: 16px;
+  position: relative;
+
+  @include respond-to(sm) {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include respond-to(sm) {
+      position: relative;
+      margin-bottom: 12px;
+    }
+  }
+
+  p {
+    color: rgba(49, 72, 95, 0.7);
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+  }
+}

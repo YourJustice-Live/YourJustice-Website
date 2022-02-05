@@ -1,0 +1,79 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  margin-bottom: 12px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include respond-to(lg) {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  @include respond-to(sm) {
+    align-items: flex-start;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  li {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(99.67deg, $gradient-second-start -7.44%, $gradient-second-end 111.26%);
+    border-radius: 20px;
+    position: relative;
+
+    &:hover {
+      background: linear-gradient(279.67deg, $gradient-second-start -7.44%, $gradient-second-end 111.26%);
+    }
+  }
+
+  .language {
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    width: 22px;
+  }
+}
+
+.icon {
+  color: $white;
+  font-size: 16px;
+}
+.twitter, .discord, .facebook, .instagram,
+.youtube, .linkedin, .medium, .telegram {
+  @extend .icon;
+}
+.twitter {font-size: 15px;}
+.discord {font-size: 15px;}
+.facebook {font-size: 17px;}
+.instagram {font-size: 17px;}
+.youtube {font-size: 13px;}
+.linkedin {font-size: 14px;}
+.medium {font-size: 15px;}
+.telegram {font-size: 17px;}

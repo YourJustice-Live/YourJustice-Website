@@ -1,0 +1,185 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 52px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  @include respond-to(sm) {
+    margin-bottom: 24px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11px;
+    background: rgba(206, 219, 239, 0.3);
+    z-index: -1;
+
+    @include respond-to(lg) {
+      width: calc(100% - 162px);
+    }
+    @include respond-to(sm) {
+      content: none;
+    }
+  }
+
+  h5 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    padding: 0 24px;
+    margin-bottom: 36px;
+    background: #fff;
+
+    @include respond-to(sm) {
+      display: none;
+    }
+  }
+
+  & > a {
+    @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    padding: 8px 109.5px 8px 75.5px;
+    width: 300px;
+    position: relative;
+    display: none;
+
+    span {
+      @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    }
+
+    @include respond-to(sm) {
+      display: inline-block;
+    }
+
+    &.opened {
+      @include text-gradient(102.02deg, #CC7B8B, -10.08%, #7558B4, 78.68%);
+
+      &:before {
+        background: linear-gradient(102.02deg, #CC7B8B -10.08%, #7558B4 78.68%);
+      }
+      &:after {
+        transform: rotate(90deg);
+        @include text-gradient(12.02deg, #CC7B8B, -10.08%, #7558B4, 78.68%);
+      }
+    }
+
+    &:before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      border-radius:50px;
+      padding: 1px;
+      background: linear-gradient(99.67deg, $gradient-first-start -10.08%, $gradient-first-end 78.68%);
+      -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    &:after {
+      content: $if-schedule-arrow;
+      font-family: '#{$icomoon-font-family}' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      font-size: 24px;
+      line-height: 24px;
+      @include text-gradient(9.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+      margin-left: 10px;
+      display: inline-block;
+      position: absolute;
+      right: 75.5px;
+      top: 8px;
+    }
+  }
+
+  & > ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 -24px;
+    width: 100%;
+
+    @include respond-to(sm) {
+      display: none;
+      padding-bottom: 12px;
+      margin: 24px -15px 0;
+    }
+    @include respond-to(xs) {
+      margin: 24px 0 0;
+    }
+
+    &.opened {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+
+    & > li {
+      margin: 0 30px 24px 0;
+      width: calc(20% - 24px);
+
+      &:nth-child(5n) {
+        @media screen and (min-width: 768px) {
+          margin-right: 0;
+        }
+      }
+      &:nth-child(2n) {
+        @include respond-to(sm) {
+          margin-right: 0;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include respond-to(lg) {
+        margin: 0 21px 24px 0;
+      }
+      @include respond-to(sm) {
+        margin: 0 16px 30px 0;
+        width: calc(50% - 8px);
+      }
+      @include respond-to(xs) {
+        margin: 0 0 30px;
+        width: 100%;
+      }
+
+      &:last-child {
+        @include respond-to(sm) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
