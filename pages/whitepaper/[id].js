@@ -85,7 +85,7 @@ export default function Article({ data, page, res }) {
               </a>
             </Link>
             <a
-              href="https://github.com/YourJustice-Live/yourjustice-live-website"
+              href="https://github.com/YourJustice-Live/landing"
               target="_blank"
               rel="nofollow noreferrer"
               className={style.github}
