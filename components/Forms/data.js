@@ -8,6 +8,10 @@ export const data = {
 }
 
 export const formTranslation = {
+  sending: {
+    en: 'Your message is sending...\nPlease wait.',
+    ru: 'Ваше сообщение отправляется.\nПожалуйста, немного подождите.'
+  },
   success: {
     title: {
       en: 'Your application has been successfully submitted!',
@@ -124,16 +128,16 @@ export const formTranslation = {
   }
 }
 export const buttons = [
+  // {
+  //   link: 'https://forum.yourjustice.life/',
+  //   icon: 'chat',
+  //   text: {
+  //     en: 'Forum',
+  //     ru: 'Форум'
+  //   }
+  // },
   {
-    link: 'https://forum.yourjustice.life/',
-    icon: 'chat',
-    text: {
-      en: 'Forum',
-      ru: 'Форум'
-    }
-  },
-  {
-    link: 'https://discord.gg/sqbuwGbU',
+    link: 'https://discord.gg/aKKCCzCfgS',
     icon: 'discord',
     text: {
       en: 'Discord',

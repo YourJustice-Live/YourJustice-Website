@@ -8,7 +8,7 @@ const { withSentryConfig } = require('@sentry/nextjs');
 const moduleExports = {
   // Your existing module.exports
   i18n: {
-    locales: ['en', 'ru'],
+    locales: ['en'/*, 'ru'*/],
     defaultLocale: 'en',
   },
   reactStrictMode: true

@@ -21,9 +21,9 @@ function getMessageText(formData) {
 export default async function sendForm(req, res) {
   try {
     await sgMail.send({
-      to: ['sunny.mckaffi@gmail.com'],
+      to: ['yourjustice.life@gmail.com'],
       from: 'noreply@yourjustice.life',
-      subject: 'Тестирование отправки форм',
+      subject: 'Сообщение с сайта yourjustice.life',
       text: getMessageText(req.body),
     })
     res.status(200).json({ status: 'success' })

@@ -3,54 +3,42 @@ export const data = {
     {
       text: {
         en: 'Vision',
-        ru: 'Зрение',
-        tr: 'Görüş',
-        ko: '비전'
+        ru: 'Зрение'
       },
       link: 'vision'
     },
     {
       text: {
         en: 'Ecosystem',
-        ru: 'Экосистема',
-        tr: 'Ekosistem',
-        ko: '생태계'
+        ru: 'Экосистема'
       },
       link: 'ecosystem'
     },
     {
       text: {
         en: 'Equilibrium',
-        ru: 'Равновесие',
-        tr: 'Denge',
-        ko: '평형'
+        ru: 'Равновесие'
       },
       link: 'equilibrium'
     },
     {
       text: {
         en: 'Team',
-        ru: 'Команда',
-        tr: 'Takım',
-        ko: '팀'
+        ru: 'Команда'
       },
       link: 'team'
     },
     {
       text: {
         en: 'Join us',
-        ru: 'Присоединяйтесь к нам',
-        tr: 'Bize katıl',
-        ko: '우리와 함께하십시오'
+        ru: 'Присоединяйтесь к нам'
       },
       link: 'join-us'
     },
     // {
     //   text: {
     //     en: 'Contacts',
-    //     ru: 'Контакты',
-    //     tr: 'İletişim',
-    //     ko: '콘택트 렌즈'
+    //     ru: 'Контакты'
     //   },
     //   link: 'contacts'
     // }
