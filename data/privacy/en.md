@@ -1,6 +1,6 @@
 # Privacy Policy for YourJustice
 
-At yourjustice.life, accessible from https://www.yourjustice.life/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by yourjustice.life and how we use it.
+At yourjustice.life, accessible from <Link type="inner" href="/">www.yourjustice.life</Link>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by yourjustice.life and how we use it.
 
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
 

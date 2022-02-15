@@ -1,8 +1,8 @@
-*28.01.2022*
+#### Updated 28.01.2022, 14:42
 
-You can describe anything using this standard of YJML
+# You can describe anything using this standard of YJML
 
-For example:
+## For example:
 
 - country with a lot of substructures
 - international contracts and agreements
@@ -20,83 +20,63 @@ For example:
 
 ## <a id="event"></a>Event (reporting):
 
-<Code>
+<Code disclosed="true">
 entity:
-
   title:
   description:
 
   event_reported:
 
-    creator: USER_ID
-    origins:
-      tile: TILE_ID
-      rule_connected: RULE_NAME
+  creator: USER_ID
+  origins:
+    tile: TILE_ID
+    rule_connected: RULE_NAME
 
-    report_status: rumor | firsthand
+  report_status: rumor | firsthand
     content:
-      text: # with mask User did Smth at datetime to Someone or something
-      media:
-      link:
+    text: \# with mask User did Smth at datetime to Someone or something
+    media:
+    link:
 
-    binary: bool # is your event binary (like the fact of pregnancy) or it has some important quantitative characteristics?
-    event_scales: [{key:value}]
+  binary: bool \# is your event binary (like the fact of pregnancy) or it has some important quantitative characteristics?
+  event_scales: [{key:value}]
 
-    witnesses: [USER_ID] #other users who can confirm
+  witnesses: [USER_ID] #other users who can confirm
 
-    evidences:
-      evidence_datetime:
-      evidence_creator:
-      evidence_status: rumor|firsthand
-      evidence_text: !string
-      evidence_media: [file]
-      evidence_link: !href
+  evidences:
+    evidence_datetime:
+    evidence_creator:
+    evidence_status: rumor|firsthand
+    evidence_text: !string
+    evidence_media: [file]
+    evidence_link: !href
 </Code>
 
 ## <a id="tile"></a>Tile structure:
 
-<Code>
-entity:
-
-  title: string
-  description: string
+<Code disclosed="true">
+  entity:
+    title: string
+    description: string
 
   tile:
-
     functional: # what will change in reality if tile will be palyed
-
     terms:
-
-	  actions:
-
+    actions:
     constructive:
-
-      subtiles: # sub-tiles are listed and relations are specified
-
+      subtiles: \# sub-tiles are listed and relations are specified
       roles:
-
         target_roles:
-
         system_roles:
-
         design_time_roles:
-
       custom_types:
-
       rating_scales:
-
       conventions:
-
         purpose_of_cooperation:
-
         values:
-
         rules:
-
           target_rules:
-
           update_rules:
-
 </Code>
 
 ### <a id="components"></a>Components
@@ -104,40 +84,39 @@ entity:
 **functional**
 
 <Code>
-		purpose_of_tile:
-      type: purpose_of_tile
-      props:
-        title: string
-        trackable: [action] # use wrapped _createEvent or _giveEvidence action to specify what event you want to see here
-        untrackable: string # and add some free text here if needed
+  purpose_of_tile:
+    type: purpose_of_tile
+    props:
+      title: string
+      trackable: [action] # use wrapped _createEvent or _giveEvidence action to specify what event you want to see here
+      untrackable: string # and add some free text here if needed
 
-    to_supertile:  
-      type: to_supertile # what playing this tile will give to supertile
-      props:
-        title: string
-        supertile: TILE_ID
-        benefit: string
+  to_supertile:  
+    type: to_supertile # what playing this tile will give to supertile
+    props:
+      title: string
+      supertile: TILE_ID
+      benefit: string
 
-      to_players: # what playing this tile will give to players
-        type: to_players
-          title: string
-          player: ROLE_NAME
-          benefit: string
+  to_players: # what playing this tile will give to players
+    type: to_players
+      title: string
+      player: ROLE_NAME
+      benefit: string
 </Code>
 
 **terms**
 
 <Code>
-terms:
-# full
-type: term
-props:
-  title: String!
-  description: String!
-  tags: [string]
-
-## natural with keywords:
-something __IS DEFINED__ as something something
+  terms:
+    \# full
+    type: term
+    props:
+      title: String!
+      description: String!
+      tags: [string]
+    \# natural with keywords:
+    something __IS DEFINED__ as something something
 </Code>
 
 **actions**
@@ -145,26 +124,26 @@ something __IS DEFINED__ as something something
 <Code>
 \# Tile creation
 
-_createTile:
-  args:
-    template_tile_id: TILE_ID
-  return:
-    tile: TILE
+  \_createTile:
+    args:
+      template_tile_id: TILE_ID
+    return:
+      tile: TILE
 
 \# **Tile updating actions:**
 
   \# Create new branch
 
-  _createBranch:
+  \_createBranch:
     args:
       runtime_tile: TILE_ID
     return:
       branch_id: TILE_ID
       main_id: TILE_ID
 
-  # Edit branch
+  \# Edit branch
 
-  _editBranch:
+  \_editBranch:
     args:
       branch_id: TILE_ID
       branch_content: TILE_CONTENT
@@ -172,26 +151,26 @@ _createTile:
     return:
       updated_branch: TILE
 
-  # Commit Branch
+ \# Commit Branch
 
-  _commitBranch:
+  \_commitBranch:
     args:
       branch_id: TILE_ID
     return:
       commited_branch_id: TILE_ID
 
-  # Merge
+  \# Merge
 
-  _mergeBranch:
+  \_mergeBranch:
     args:
       branch_id: TILE_ID
       main_id: TILE_ID
     return:
       new_main: TILE_ID
 
-  # Approve standBy version
+  \# Approve standBy version
 
-  _approveSBVersion:
+  \_approveSBVersion:
     args:
       main_id: TILE_ID
       procedure:
@@ -200,9 +179,9 @@ _createTile:
     return:
       stand_by_tile: TILE
 
-  # Approve runtime version
+  \# Approve runtime version
 
-  _approveRTVersion:
+  \_approveRTVersion:
     args:
       stand_by_tile: TILE_ID
       procedure:
@@ -211,40 +190,39 @@ _createTile:
     return:
       runtime_tile_new: TILE  
 
-# **Roles updating actions:**
+\# **Roles updating actions:**
 
-# Invite to role (actually shortcut for)
-    _checkUser:
+  \# Invite to role (actually shortcut for)
+    \_checkUser:
       args:
         name: string
         surname:
         date_of_birth:
         city:
         mail:
-        tags: [string]
+        tags: \[string\]
       return:
         user_status: bool
-        user_id: USER_ID # if their privacy settings allow
+        user_id: USER_ID \# if their privacy settings allow
 
-    _inviteInternalToRole:
+    \_inviteInternalToRole:
       args:
         role: ROLE_NAME
         tile_id: TILE_ID
         actor: USER_ID
       return:
         invitation_sent: bool
-
-    _inviteExternalToRole:
+    
+    \_inviteExternalToRole:
       args:
         role: ROLE_NAME
         tile_id: TILE_ID
         actor: string
       return:
-        invitation_link: INVITATION_LINK # with rights to access forms
+        invitation_link: INVITATION_LINK \# with rights to access forms
 
-# So invite to role      
-
-  _inviteToRole:
+  \# So invite to role      
+  \_inviteToRole:
     args:
       role: ROLE_NAME
       tile_id: TILE_ID
@@ -255,17 +233,16 @@ _createTile:
       invitation_sent: bool
       invitation_link: INVITATION_LINK #if role requires filling forms invitation redirects?
 
-  # Accept role
-
-  _acceptRole:
+  \# Accept role
+  \_acceptRole:
     args:
       role: ROLE_NAME
       tile_id: TILE_ID
     return:
       role: ROLE # whole role object with information about who plays this role now
 
-  # Decline role
-  _declineRole:
+  \# Decline role
+  \_declineRole:
     args:
       role: ROLE_NAME
       tile_id: TILE_ID
@@ -273,9 +250,8 @@ _createTile:
       role: ROLE # with free status
 
 
-  # Apply to role
-
-  _applyToRole:
+  \# Apply to role
+  \_applyToRole:
     args:
       role: ROLE_NAME
       tile_id: TILE_ID
@@ -283,9 +259,8 @@ _createTile:
     return:
       application_sent: bool
 
-  # Remove from role
-
-  _removeFromRole:
+  \# Remove from role
+  \_removeFromRole:
     args:
       role: ROLE_NAME
       tile_id: TILE_ID
@@ -294,9 +269,9 @@ _createTile:
       role_status: free
 
 
-  # *#Accept application*
+  \# *#Accept application*
 
-  _acceptApplication:
+  \_acceptApplication:
     args:
       role: ROLE_ID
       actor: USER_ID
@@ -304,9 +279,9 @@ _createTile:
     return:
       role: ROLE
 
-  # *#Update application
+  \# *Update application*
 
-  _updateApplication:
+  \_updateApplication:
     args:
       role: ROLE_ID
       actor: USER_ID
@@ -314,9 +289,9 @@ _createTile:
     return:
       role: ROLE
 
-  # *#Decline application*
+  \# *#Decline application*
 
-  _declineApplication:
+  \_declineApplication:
     args:
       role: ROLE_ID
       actor: USER_ID
@@ -325,11 +300,11 @@ _createTile:
       role_status: free
       notification_sent: bool #and your standard letter specifien in tile maybe...
 
-# **Events:**
+\# **Events:**
 
-  # Create events
+  \# Create events
 
-  _createEvent:
+  \_createEvent:
     args:
       title: !string
       description: !string
@@ -343,9 +318,9 @@ _createTile:
     return:
       new_event: EVENT
 
-  # Edit event
+  \# Edit event
 
-  _editEvent:
+  \_editEvent:
     args:
       event_id: EVENT_ID
       modification:
@@ -355,9 +330,9 @@ _createTile:
     return:
       event: EVENT
 
-  # Give evidence
+  \# Give evidence
 
-  _giveEvidence:
+  \_giveEvidence:
     args:
       event_id: EVENT_ID
       witness: bool
@@ -367,9 +342,9 @@ _createTile:
     return:
       event: EVENT
 
-  # Evaluate event
+  \# Evaluate event
 
-  _evaluateEvent:
+  \_evaluateEvent:
     args:
       event_id: EVENT_ID
       tile_id: TILE_ID
@@ -382,11 +357,11 @@ _createTile:
     return:
       rating_event: RATING_EVENT
 
-# **Profile:**
+\# **Profile:**
 
-  # Create profile
+  \# Create profile
 
-  _createProfile:
+  \_createProfile:
     args:
       user_id: USER_ID
       tile_id: TILE_ID
@@ -395,9 +370,9 @@ _createTile:
     return:
       user_profile: PROFILE
 
-  # Update profile
+  \# Update profile
 
-  _updateProfile:
+  \_updateProfile:
     args:
     user_id: USER_ID
       tile_id: TILE_ID
@@ -406,9 +381,9 @@ _createTile:
     return:
       user_profile: PROFILE
 
-# **Processes
+\# **Processes**
 
-  _initiatePlayOut:
+  \_initiatePlayOut:
     args:
       tile_id: TILE_ID
       params: [{key:value}]
@@ -416,26 +391,26 @@ _createTile:
     return:
       invitation_sent: [bool]
 
-  # Vote
+  \# Vote
 
-  _vote:
+  \_vote:
     args:
       tile_id: TILE_ID
       agenda: STRING
     return:
       vote: bool
 
-  # Count votes
+  \# Count votes
 
-  _countVotes:
+  \_countVotes:
     args:
       tile_id: TILE_ID
     return:
       result: FORM_ID
 
-  # Announce decision
+  \# Announce decision
 
-  _announceDecision:
+  \_announceDecision:
     args:
       tile_id: TILE_ID
       result: FORM_ID
@@ -446,111 +421,88 @@ _createTile:
 **constructive**
 
 <Code>
-
-subtiles: # sub-tiles are listed and relations are specified
-
+subtiles: \# sub-tiles are listed and relations are specified
 	subtile_name:
-
       entity_id: ENTITY_ID
-
-        type: role_downwards # for auto-appointment
+        type: role_downwards \# for auto-appointment
         props:
           title: string
           this_tile_role:
-            by_name: ROLE_NAME # role in this tile
-            by_right: [right] # rights in this tile with logic operators
-
+            by_name: ROLE_NAME \# role in this tile
+            by_right: [right] \# rights in this tile with logic operators
           sub_tile_role:
-              by_name: ROLE_NAME # role in sub-tile
-              by_right: [right] # rights in sub-tile with logic operators
-
-
-
-        type: role_upwards # for rule-based efforts which must contain checking for conflicts. Experimental ans raw!
+              by_name: ROLE_NAME \# role in sub-tile
+              by_right: [right] \# rights in sub-tile with logic operators
+        type: role_upwards \# for rule-based efforts which must contain checking for conflicts. Experimental ans raw!
         props:
           title: string
-          rule: RULE_NAME # rule in this tile
-
+          rule: RULE_NAME \# rule in this tile
           sub_tile_role:
               by_name: role_name
               by_right: [right]
-
           this_tile_role:
             by_name: role_name
             by_right: [right]
-
-
         type: convention_theme
         props:
           title: string
           convention_type: value|rule|variable
           convention_name: string
           convention_priority: super|sub
-
         type: term_theme
         props:
           title: string
           term_tag: string
           priority: super|sub
           explanation: string
-
 roles:
-
   target_roles:
 		type: role
 	  props:
 	    title: string
 	    description: string
-	    tags: [string]
-
+	    tags: \[string\]
 	    active_stage_bdi:
-	      beliefs: [VALUE_NAME;we|fit], [EVENT;BOOL] # value specified in tile
-	      desire: [action] # one, max two well-specified event-creation actions, what ROLE want to see occured
-	      intention: string # main strategy to do specified above  
-
+	      beliefs: [VALUE_NAME;we|fit], [EVENT;BOOL] \# value specified in tile
+	      desire: [action] \# one, max two well-specified event-creation actions, what ROLE want to see occured
+	      intention: string \# main strategy to do specified above  
 	    life_cycle_stages:
 	      type: life_cycle_stage
 	      title: string
 	        - application
-	        # or
-	        - invite # to fill form or...
+	        \# or
+	        - invite \# to fill form or...
 	          rights: [action]
 	        - active
 	          rights: [action]
 	        - ex
 	          rights: [action]
-
 	    profile_form:
-	      params: [{key:value}] # what tile wants to store in user's profile about user linked to this role
-
+	      params: [{key:value}] \# what tile wants to store in user's profile about user linked to this role
 	    role_requirements:
-	      modality: must|must_not # you can see some kind of parralelism with rule declaration, but "may" modality is not needed
+	      modality: must|must_not \# you can see some kind of parralelism with rule declaration, but "may" modality is not needed
 	      other_roles:
-	        tile: TILE_ID # tile in which other role can or can't be
+	        tile: TILE_ID \# tile in which other role can or can't be
 	        role_name: ROLE_NAME
 	          life_cycle_stage: LIFE_CYCLE_STAGE_NAME
 	        role_tags: [string]
-	        # leave all previous blank and "must have at least one role with this tag" in case of "must" modality
-	        # and "must have no roles with this tag" in case of "must_not" modality
+	        \# leave all previous blank and "must have at least one role with this tag" in case of "must" modality
+	        \# and "must have no roles with this tag" in case of "must_not" modality
 	      other:
 	        params: [{key:value}]
-
-	    application_form: # if any
-	      params: [{key:value}]
-
-	  # ROLE_NAME belives something and wants something, so intends to do something.
-	  # ROLE'S LIFE CYCLE is as follows STAGES. Each stage posseses its rights for the ROLE.
-	  # The TILE will collect and store the PROFILE FORM info in connection to this role.
-	  # To play this ROLE, USER must or must not something.
-	  # Application form is as follows.
-
+	    application_form: \# if any
+	      params: [\{key:value\}]
+	  \# ROLE_NAME belives something and wants something, so intends to do something.
+	  \# ROLE'S LIFE CYCLE is as follows STAGES. Each stage posseses its rights for the ROLE.
+	  \# The TILE will collect and store the PROFILE FORM info in connection to this role.
+	  \# To play this ROLE, USER must or must not something.
+	  \# Application form is as follows.
 
   system_roles:
-		# usually _guest, _admin and so on
-
+		\# usually \_guest, \_admin and so on
   design_time_roles:
-		# list roles which are participating in document creation and versioning process, such as "voter" "developer" and so on,
-		# declaration form is the same as for other roles
+		\# list roles which are participating in document creation and versioning process, such as "voter" "developer" and so on,
+		\# declaration form is the same as for other roles
 
 custom_types:
 	type: custom_type
@@ -576,17 +528,16 @@ conventions:
   purpose_of_cooperation:
 		type: purpose_of_cooperation
 	  props:
-	    title: string # maybe custom name for it  
+	    title: string \# maybe custom name for it  
 	    statement:
 	      we: string
-	      reason: string # why we decided to cooperate
-	      purpose: string # what we are going to do by all this
-
-	# natural with keywords   
+	      reason: string \# why we decided to cooperate
+	      purpose: string \# what we are going to do by all this
+	\# natural with keywords   
 	We %somebody% for some %reasons% decided to cooperate in this for achieving %something%.
 
   values:
-		#full
+		\#full
 	  type: value
 	  props:
 	    title:
@@ -601,65 +552,61 @@ conventions:
 	      fit: [string] *
 	      unfit: [string]
 	      enemy: [string]
-	    tags: [string] # for grouping purposes and other
-	  #natural with keywords
-	  __WE VALUE__ something. __WE CLAIM|THINK|BELIEVE__ that something and __WILL|WILL NOT TOLERATE OTHER OPINIONS SUCH AS__ something.
+	    tags: [string] \# for grouping purposes and other
+	  \#natural with keywords
+	  \_\_WE VALUE\_\_ something. \_\_WE CLAIM|THINK|BELIEVE\_\_ that something and \_\_WILL\|WILL NOT TOLERATE OTHER OPINIONS SUCH AS\_\_ something.
 
   rules:
-
     target_rules:
-		  # basic rule about what to do (deontic modal logic inspired)
+		  \# basic rule about what to do (deontic modal logic inspired)
 			type: rule
 			props:
-			# type rule has two main parts, important event specification (which is reusable in other rules)
-			# and rule about the event itself
-			# do not confuse "important event specification" and "event_reported" entity when you report parts of occuring reality in the system
+			\# type rule has two main parts, important event specification (which is reusable in other rules)
+			\# and rule about the event itself
+			\# do not confuse "important event specification" and "event_reported" entity when you report parts of occuring reality in the system
 			  type: event
-			  props: # or you can *inherit* all props from other event to just create completely different rule about it
+			  props: \# or you can *inherit* all props from other event to just create completely different rule about it
 			    title: !string
-			    description: !string # short description
+			    description: !string \# short description
 			    content:
-			      text: !string # with masks, for example "ROLE publishes Х", или "ROLE beats ROLE" + we can add additional name of the role for in-rule use using "=": ex:"ANY_ROLE@ANY_TILE = AGRESSOR"
+			      text: !string \# with masks, for example "ROLE publishes Х", или "ROLE beats ROLE" + we can add additional name of the role for in-rule use using "=": ex:"ANY\_ROLE@ANY_TILE = AGRESSOR"
 			      media:
-			      link: !href
-			    confirmation_method: # fill only one that fits
-			      actor_report: bool # report of somebody who actually do the action of the event
-			      witnesses: # reports of witnesses
-			        number: # you can specify what amount of withesses
-			        requirements: [{key:value}] # and what requirements for them
+			      link: \!href
+			    confirmation_method: \# fill only one that fits
+			      actor_report: bool \# report of somebody who actually do the action of the event
+			      witnesses: \# reports of witnesses
+			        number: \# you can specify what amount of withesses
+			        requirements: [{key:value}] \# and what requirements for them
 			      court: [TILE_ID] # list possible court tiles whose decisions you will trust
-			      specific_role_report: [ROLE] # you can refer by in-rule name of role
-			    binary: bool # is your event binary (like the fact of pregnancy) or it has some important quantitative characteristics?
-			    event_scales: [{key:value}]
-
-			# rule connected to the event above
-			event_confirmed: event_title # We noticed event occured...
-			event_modality: must|may| !(may) # !may = is not allowed
+			      specific_role_report: [ROLE] \# you can refer by in-rule name of role
+			    binary: bool \# is your event binary (like the fact of pregnancy) or it has some important quantitative characteristics?
+			    event_scales: [\{key:value\}]
+			\# rule connected to the event above
+			event_confirmed: event_title \# We noticed event occured...
+			event_modality: must|may| !(may) \# !may = is not allowed
 			when:
 			  - always
 			  - DATE.TIME, repeating time or period
 			  - after another event or action
-			presence_actions: # actions in case of event presence
+			presence_actions: \# actions in case of event presence
 			  enforcer: system | court_decision | ROLE
 			    on_whom: ROLE
-			    orders: [string] # with mask; send orders to ROlE above
+			    orders: [string] \# with mask; send orders to ROlE above
 			    rating:
 			      scale: scale_id | scale_name  
 			      amount: number|event_scale_name # use number (min-max) or event_scale_name from event declaration and simple math
-			absence_actions: # actions in case of event presence, use with must-rules
+			absence_actions: \# actions in case of event presence, use with must-rules
 			  enforcer: system | court_decision | ROLE
 			    on_whom: ROLE
-			    orders: [string] # with mask; send orders to ROlE above
+			    orders: [string] \# with mask; send orders to ROlE above
 			    rating:
 			      scale: scale_id | scale_name  
 			      amount: number|event_scale_name
 			# use multiple blocks of presence and absence actions
-			exceptions: [{key:value}] # use optional fields to specify the exceptions
+			exceptions: [{key:value}] \# use optional fields to specify the exceptions
 			flex: immutable|fixed until DATE.TIME|flexible
-			value: VALUE_NAME # must be specified in this tile or in supertile-chain
-			tags: [string] # for grouping purposes and other
-
+			value: VALUE_NAME \# must be specified in this tile or in supertile-chain
+			tags: [string] \# for grouping purposes and other
     update_rules:
-			# same as target  
-
+			\# same as target  
 </Code>

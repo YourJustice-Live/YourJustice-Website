@@ -16,7 +16,7 @@ const socialsCommon = [
   },
   {
     icon: 'discord',
-    src: 'https://discord.gg/sqbuwGbU'
+    src: 'https://discord.gg/aKKCCzCfgS'
   },
   {
     icon: 'facebook',
