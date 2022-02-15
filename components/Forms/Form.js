@@ -34,7 +34,7 @@ export default function Form({ type = 'developers', isOpen = false }) {
             <div></div><div><div></div></div>
           </div>
         </div>
-        <p>Ваше сообщение отправляется.<br/>Пожалуйста, немного подождите.</p>
+        <p>{formTranslation.sending[locale]}</p>
       </div>
       <form action="#" className={status === 'none' ? style.visible : ''} onSubmit={handleSubmit(handleForm)}>
         <div

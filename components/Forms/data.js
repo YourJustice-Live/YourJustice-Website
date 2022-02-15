@@ -8,6 +8,10 @@ export const data = {
 }
 
 export const formTranslation = {
+  sending: {
+    en: 'Your message is sending...\nPlease wait.',
+    ru: 'Ваше сообщение отправляется.\nПожалуйста, немного подождите.'
+  },
   success: {
     title: {
       en: 'Your application has been successfully submitted!',

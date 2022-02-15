@@ -89,9 +89,9 @@ export default function Footer({lang, setLang}) {
             {linksGroups.map((group, i) => <div key={`dsmc20-c1kc1` + i} className={style.linksGroup}>
               <h3>{group.title[locale]}</h3>
               <ul>
-                {group.links.map((link, i) => <li key={`dc1-fc2j42091` + i}>
-                  <Link href={link.link}>{link.text[locale]}</Link>
-                </li>)}
+            {group.links.map((link, i) => <li key={`dc1-fc2j42091` + i}>
+            <Link href={link.link}>{link.text[locale]}</Link>
+            </li>)}
               </ul>
             </div>)}
           </div>*/}
@@ -109,9 +109,9 @@ export default function Footer({lang, setLang}) {
               </li>)}
             </ul>
           </div>
-          <div className={style.language}>
+          {/* <div className={style.language}>
             <Language lang={lang} setLang={setLang} top={true} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

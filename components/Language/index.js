@@ -5,10 +5,10 @@ import {useRouter} from 'next/router'
 import style from './index.module.scss'
 
 const languages = [
-  {
-    id: 'ru',
-    text: 'Русский'
-  },
+  // {
+  //   id: 'ru',
+  //   text: 'Русский'
+  // },
   {
     id: 'en',
     text: 'English'

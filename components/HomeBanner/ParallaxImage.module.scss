@@ -1,0 +1,25 @@
+.parallax {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease;
+
+  & > span {
+    height: calc(100% + 130px) !important;
+    width: 100% !important;
+    bottom: 0 !important;
+    position: absolute !important;
+  }
+}
+
+.image {
+  object-fit: cover;
+  max-height: none !important;
+  min-height: inherit !important;
+  max-width: none !important;
+  min-width: inherit !important;
+  height: 100% !important;
+  width: 100% !important;
+}

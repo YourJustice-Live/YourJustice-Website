@@ -88,9 +88,9 @@ export default function Header({lang, setLang}) {
           }
         </li>)}
       </ul>
-      <div className={style.languages}>
+      {/* <div className={style.languages}>
         <Language lang={lang} setLang={setLang} />
-      </div>
+      </div> */}
       <div className={style.menuWrapper}>
         <button className={`${style.burger} ${isMenuOpen ? style.opened : ''}`} onClick={handleMenu}>
           <span></span>
@@ -99,9 +99,9 @@ export default function Header({lang, setLang}) {
           <span></span>
         </button>
         <div className={`${style.menu} ${isMenuOpen ? style.opened : ''}`}>
-          <div className={style.menuLanguage}>
+          {/* <div className={style.menuLanguage}>
             <Language lang={lang} setLang={setLang} />
-          </div>
+          </div> */}
           <ul>
             {links.map((link, i) => <li key={`23c322p11kc1` + i}>
               {

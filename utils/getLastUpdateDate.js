@@ -6,7 +6,7 @@ export default async function getLastUpdateDate(token, path) {
   const { repository } = await graphql(
     `{
       repository(owner: "YourJustice-Live", name: "landing") {
-        ref(qualifiedName: "dev") {
+        ref(qualifiedName: "main") {
           target {
             ... on Commit {
               history(first: 1, path: "${path}") {
