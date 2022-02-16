@@ -97,6 +97,7 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: $ls-first;
+    white-space: nowrap;
 
     span, i {
       @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);

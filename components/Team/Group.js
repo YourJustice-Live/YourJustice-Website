@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useRouter } from 'next/router'
 
 import Person from './Person'
 
@@ -6,6 +7,7 @@ import style from './Group.module.scss'
 
 export default function Group({group}) {
   const [isOpen, setIsOpen] = useState(false)
+  const {locale} = useRouter()
 
   const handleOpen = e => {
     e.preventDefault()
@@ -14,8 +16,8 @@ export default function Group({group}) {
 
   return (
     <div className={style.wrapper}>
-      <h5>{group.head}</h5>
-      <a className={isOpen ? style.opened : ''} onClick={handleOpen}><span>{group.head}</span></a>
+      <h5>{group.head[locale]}</h5>
+      <a className={isOpen ? style.opened : ''} onClick={handleOpen}><span>{group.head[locale]}</span></a>
       <ul className={isOpen ? style.opened : ''}>
         {group.members.map((person, i) => <li key={person.name + i + person.role}>
           <Person person={person} />

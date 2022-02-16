@@ -29,6 +29,9 @@ export default function Header({lang, setLang}) {
       top: coord,
       behavior: 'smooth'
     })
+    if (isMenuOpen) {
+      setIsMenuOpen(false)
+    }
   }
 
   useEffect(() => {

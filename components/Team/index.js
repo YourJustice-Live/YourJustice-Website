@@ -26,7 +26,7 @@ export default function Team() {
           <h2>{header.title[locale]}</h2>
           <p>{header.text[locale]}</p>
         </div>
-        {data.map((group, i) => <Group group={group} key={group.head + i}/>)}
+        {data.map((group, i) => <Group group={group} key={`fsdfsscdc2c1-${i}`}/>)}
       </div>
     </div>
   )

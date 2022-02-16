@@ -1,12 +1,21 @@
 {
   "team": [
     {
-      "head": "Co-Founders",
+      "head": {
+        "en": "Co-Founders",
+        "ru": "Co-Founders"
+      },
       "members": [
         {
-          "name": "Timur Artemev",
+          "name": {
+            "en": "Timur Artemev",
+            "ru": "Timur Artemev"
+          },
           "ava": "/assets/images/timur-artemev.png",
-          "position": "Co-founder & Ideologist",
+          "position": {
+            "en": "Co-founder & Ideologist",
+            "ru": "Co-founder & Ideologist"
+          },
           "socials": [
             {
               "icon": "twitter",
@@ -19,9 +28,15 @@
           ]
         },
         {
-          "name": "Andrey Panferov",
+          "name": {
+            "en": "Andrey Panferov",
+            "ru": "Andrey Panferov"
+          },
           "ava": "/assets/images/andrey-panferov.png",
-          "position": "Co-founder & CEO",
+          "position": {
+            "en": "Co-founder & CEO",
+            "ru": "Co-founder & CEO"
+          },
           "socials": [
             {
               "icon": "twitter",
@@ -34,13 +49,22 @@
           ]
         },
         {
-          "name": "<img src='/assets/images/svg_volodya.svg' />",
+          "name": {
+            "en": "<img src='/assets/images/svg_volodya.svg' />",
+            "ru": "<img src='/assets/images/svg_volodya.svg' />"
+          },
           "ava": "/assets/images/vladimir-r.png"
         },
         {
-          "name": "Pion Medvedeva",
+          "name": {
+            "en": "Pion Medvedeva",
+            "ru": "Pion Medvedeva"
+          },
           "ava": "/assets/images/pion-medvedeva.png",
-          "position": "Co-founder & Ontologist",
+          "position": {
+            "en": "Co-founder & Ontologist",
+            "ru": "Co-founder & Ontologist"
+          },
           "socials": [
             {
               "icon": "facebook",
@@ -53,9 +77,15 @@
           ]
         },
         {
-          "name": "Lena Rantsevich",
+          "name": {
+            "en": "Lena Rantsevich",
+            "ru": "Lena Rantsevich"
+          },
           "ava": "/assets/images/lena-rantsevich.png",
-          "position": "Co-founder & CMO",
+          "position": {
+            "en": "Co-founder & CMO",
+            "ru": "Co-founder & CMO"
+          },
           "socials": [
             {
               "icon": "facebook",
@@ -70,105 +100,210 @@
       ]
     },
     {
-      "head": "Team",
+      "head": {
+        "en": "Team",
+        "ru": "Team"
+      },
       "members": [
         {
-          "name": "Ladislas",
+          "name": {
+            "en": "Ladislas",
+            "ru": "Ladislas"
+          },
           "ava": "/assets/images/ladislas.png",
-          "position": "Art-Director"
+          "position": {
+            "en": "Art-Director",
+            "ru": "Art-Director"
+          }
         },
         {
-          "name": "Gleb Sovin",
+          "name": {
+            "en": "Gleb Sovin",
+            "ru": "Gleb Sovin"
+          },
           "ava": "/assets/images/glev-sovin.png",
-          "position": "UI/UX designer"
+          "position": {
+            "en": "UI/UX designer",
+            "ru": "UI/UX designer"
+          }
         },
         {
-          "name": "Gleb Kachalkin",
+          "name": {
+            "en": "Gleb Kachalkin",
+            "ru": "Gleb Kachalkin"
+          },
           "ava": "/assets/images/gleb-kachalkin.png",
-          "position": "Designer"
+          "position": {
+            "en": "Designer",
+            "ru": "Designer"
+          }
         },
         {
-          "name": "Ksenia Matveeva",
+          "name": {
+            "en": "Ksenia Matveeva",
+            "ru": "Ksenia Matveeva"
+          },
           "ava": "/assets/images/ksenia-matveeva.png",
-          "position": "Lawyer"
+          "position": {
+            "en": "Lawyer",
+            "ru": "Lawyer"
+          }
         },
         {
-          "name": "Ilya Braude - Zolotarev",
+          "name": {
+            "en": "Ilya Braude - Zolotarev",
+            "ru": "Ilya Braude - Zolotarev"
+          },
           "ava": "/assets/images/ilya-braude-zolotarev.png",
-          "position": "Ontologist"
+          "position": {
+            "en": "Ontologist",
+            "ru": "Ontologist"
+          }
         },
         {
-          "name": "Maksym Dermenzhy",
+          "name": {
+            "en": "Maksym Dermenzhy",
+            "ru": "Maksym Dermenzhy"
+          },
           "ava": "/assets/images/maksym-dermenzhy.png",
-          "position": "Assistant"
+          "position": {
+            "en": "Assistant",
+            "ru": "Assistant"
+          }
         },
         {
-          "name": "Victoria Musaverova",
+          "name": {
+            "en": "Victoria Musaverova",
+            "ru": "Victoria Musaverova"
+          },
           "ava": "/assets/images/victoria-musaverova.png",
-          "position": "Assistant"
+          "position": {
+            "en": "Assistant",
+            "ru": "Assistant"
+          }
         },
         {
-          "name": "Oleg Korzhanov",
+          "name": {
+            "en": "Oleg Korzhanov",
+            "ru": "Oleg Korzhanov"
+          },
           "ava": "/assets/images/oleg-korzhanov.png",
-          "position": "Node JS Developer"
+          "position": {
+            "en": "Node JS Developer",
+            "ru": "Node JS Developer"
+          }
         },
         {
-          "name": "Dmitriy",
+          "name": {
+            "en": "Dmitriy",
+            "ru": "Dmitriy"
+          },
           "ava": "/assets/images/dmitriy.png",
-          "position": "Node JS Developer"
+          "position": {
+            "en": "Node JS Developer",
+            "ru": "Node JS Developer"
+          }
         },
         {
-          "name": "Sarooj Bukhari",
+          "name": {
+            "en": "Sarooj Bukhari",
+            "ru": "Sarooj Bukhari"
+          },
           "ava": "/assets/images/sarooj-bukhari.png",
-          "position": "Front End <br />Developer(React JS)"
+          "position": {
+            "en": "Front End <br />Developer(React JS)",
+            "ru": "Front End <br />Developer(React JS)"
+          }
         },
         {
-          "name": "Anton Petrov",
+          "name": {
+            "en": "Anton Petrov",
+            "ru": "Anton Petrov"
+          },
           "ava": "/assets/images/anton-petrov.png",
-          "position": "Accountant"
+          "position": {
+            "en": "Accountant",
+            "ru": "Accountant"
+          }
         },
         {
-          "name": "Alex Shumigay",
+          "name": {
+            "en": "Alex Shumigay",
+            "ru": "Alex Shumigay"
+          },
           "ava": "/assets/images/alex-shumigay.png",
-          "position": "Archivarius"
+          "position": {
+            "en": "Archivarius",
+            "ru": "Archivarius"
+          }
         },
         {
-          "name": "Vadim Alexeev",
+          "name": {
+            "en": "Vadim Alexeev",
+            "ru": "Vadim Alexeev"
+          },
           "ava": "/assets/images/vadim-alexeev.png",
-          "position": "Web3 Architect"
+          "position": {
+            "en": "Web3 Architect",
+            "ru": "Web3 Architect"
+          }
         }
       ]
     },
     {
-      "head": "Advisory",
+      "head": {
+        "en": "Advisory",
+        "ru": "Advisory"
+      },
       "members": [
         {
-          "name": "Ksenia Shuravko",
+          "name": {
+            "en": "Ksenia Shuravko",
+            "ru": "Ksenia Shuravko"
+          },
           "ava": "/assets/images/ksenia-shuravko.png"
         },
         {
-          "name": "Danila Medvedev",
+          "name": {
+            "en": "Danila Medvedev",
+            "ru": "Danila Medvedev"
+          },
           "ava": "/assets/images/danila-medvedev.png"
         },
         {
-          "name": "Andrey Voronkov",
+          "name": {
+            "en": "Andrey Voronkov",
+            "ru": "Andrey Voronkov"
+          },
           "ava": "/assets/images/andrey-voronkov.png"
         }
       ]
     },
     {
-      "head": "Ambassadors",
+      "head": {
+        "en": "Ambassadors",
+        "ru": "Ambassadors"
+      },
       "members": [
         {
-          "name": "Janina Lowisz",
+          "name": {
+            "en": "Janina Lowisz",
+            "ru": "Janina Lowisz"
+          },
           "ava": "/assets/images/janina-lowisz.png"
         },
         {
-          "name": "Rod Cook",
+          "name": {
+            "en": "Rod Cook",
+            "ru": "Rod Cook"
+          },
           "ava": "/assets/images/rod-cook.png"
         },
         {
-          "name": "Michael Seidel",
+          "name": {
+            "en": "Michael Seidel",
+            "ru": "Michael Seidel"
+          },
           "ava": "/assets/images/michael-seidel.png"
         }
       ]
