@@ -7,7 +7,6 @@ import { ArticleContent, PageNavigation, Button, Icon } from 'components'
 import { getData, getAllFiles, getLastUpdateDate } from 'utils'
 
 import { translations } from 'translations/whitepaper'
-import { months } from 'translations/months'
 
 import style from './index.module.scss'
 
@@ -16,13 +15,17 @@ export async function getStaticProps(context) {
   const token = process.env.GITHUB_ACCESS_TOKEN
   const page = params.id
   const result = await getData('whitepaper', page, locale)
-  const res = await getLastUpdateDate(token, `data/whitepaper/${page}/${locale}.md`)
+  const lastUpdateDate = await getLastUpdateDate(
+    token,
+    `data/whitepaper/${page}/${locale}.md`,
+    locale
+  )
 
   return {
     props: {
       ...result,
       page,
-      res
+      lastUpdateDate,
     },
   }
 }
@@ -49,14 +52,9 @@ export async function getStaticPaths({ locales }) {
   }
 }
 
-export default function Article({ data, page, res }) {
+export default function Article({ data, lastUpdateDate }) {
   const [nav, setNav] = useState([])
-  const {locale} = useRouter()
-  const date = new Date(res.ref.target.history.edges[0].node.committedDate)
-  const year = date.getFullYear()
-  const month = months[date.getMonth()][locale]
-  const day = date.getDate()
-  const convertedDate = `${month} ${day}, ${year}`
+  const { locale } = useRouter()
 
   return (
     <div className={style.wrapper}>
@@ -64,11 +62,18 @@ export default function Article({ data, page, res }) {
         <div className={style.content}>
           <div className={style.header}>
             <div className={style.breadcrumbs}>
-              <Link href="/">Home</Link> / <Link href="/whitepaper"><a><span>Whitepaper</span></a></Link>
+              <Link href="/">Home</Link> /{' '}
+              <Link href="/whitepaper">
+                <a>
+                  <span>Whitepaper</span>
+                </a>
+              </Link>
             </div>
-            <div className={style.date}>
-              {translations.lastUpdate[locale]}: {convertedDate}
-            </div>
+            {lastUpdateDate && (
+              <div className={style.date}>
+                {translations.lastUpdate[locale]}: {lastUpdateDate}
+              </div>
+            )}
             <h1>YourJustice WhitePaper</h1>
           </div>
           <div className={style.navigation}>
