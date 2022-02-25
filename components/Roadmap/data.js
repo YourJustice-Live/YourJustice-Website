@@ -12,7 +12,27 @@ export const data = {
   roadmap: {
     en: [
       {
-        header: 'Q3 2021 <br />Initial Investment <br />– $1 mln'
+        header: 'Q3 2021 <br />Initial Investment <em>– $1 mln</em>',
+        list: [
+          {
+            text: 'Ontology'
+          },
+          {
+            text: 'YJML Language'
+          },
+          {
+            text: 'Research'
+          },
+          {
+            text: 'CustDev'
+          },
+          {
+            text: 'Marketing'
+          },
+          {
+            text: 'Tokenomics'
+          }
+        ]
       },
       {
         header: 'Q1 2022 <br />Centralized Alpha',
@@ -74,8 +94,52 @@ export const data = {
         ]
       },
       {
+        header: 'Q2 2022 <br />Centralized Alpha 2',
+        list: [
+          {
+            text: 'Extending Engine',
+            list: [
+              {
+                text: 'Organization Profiles'
+              },
+              {
+                text: 'Memory Profiles'
+              }
+            ]
+          },
+          {
+            text: 'Integrations',
+            list: [
+              {
+                text: 'Reputation Widget'
+              },
+              {
+                text: 'Webhooks'
+              },
+              {
+                text: 'Open Data'
+              }
+            ]
+          },
+          {
+            text: 'Matching',
+            list: [
+              {
+                text: 'Value Tests'
+              }
+            ]
+          },
+          {
+            text: 'Civil &Legal Threats Insurance'
+          }
+        ]
+      },
+      {
         header: 'Q3 2022 <br />Centralized Alpha 3',
         list: [
+          {
+            text: 'Jurisdiction Engine for Communities, DAOs, States, SEZs'
+          },
           {
             text: 'Governance',
             list: [

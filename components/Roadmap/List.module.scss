@@ -3,7 +3,7 @@
 
 .wrapper {
   padding-left: 26px;
-  padding-top: 16px;
+  padding-top: 8px;
   position: relative;
   overflow: hidden;
 
@@ -16,11 +16,16 @@
       display: block;
     }
   }
+
+  & > li > ul {
+    padding-top: 1px;
+    margin-top: 12px;
+  }
 }
 
 .list {
   &Item {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
 
     &:last-child {
@@ -38,7 +43,7 @@
       width: 14px;
       height: 30px;
       left: -14px;
-      top: -14px;
+      top: -17px;
       border-radius: 0 0 0 8px;
       padding: 0 0 1px 1px;
       background: linear-gradient(180deg, #5880AE 10.35%, #7D7BEF 46.3%, #DD94FF 77.35%, #EA77AE 104.58%);
@@ -54,11 +59,17 @@
 
   &Text {
     font-family: $manrope;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 25px;
-    padding: 3px 6px;
+    line-height: 24px;
+    padding: 0 6px;
 
+    @include respond-to(1399px) {
+      line-height: 19px;
+    }
+    @include respond-to(md) {
+      font-size: 10px;
+    }
     @include respond-to(sm) {
       font-size: 16px;
       line-height: 22px;
@@ -73,7 +84,7 @@
 .branch {
   position: absolute;
   width: 14px;
-  top: -4px;
+  top: -8px;
   left: 12px;
   border-radius: 0 0 0 8px;
   padding: 0 0 1px 1px;

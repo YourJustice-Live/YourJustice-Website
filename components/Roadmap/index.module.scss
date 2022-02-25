@@ -9,6 +9,9 @@
   flex-direction: column;
   align-items: center;
 
+  @include respond-to(md) {
+    padding: 170px 14px 85px;
+  }
   @include respond-to(sm) {
     padding: 135px 18px 93px;
   }
@@ -93,7 +96,7 @@
       position: absolute;
       left: 0;
       top: -28px;
-      background: linear-gradient(90deg, #6380DC 1.83%, #DA63DC 25.26%, #EAA27A 54.57%, #C4DC63 75.43%, #36CA95 98%);
+      background: linear-gradient(90deg, #6380DC 3.42%, #DA63DC 26.76%, #EAA27A 55.94%, #C4DC63 70.16%, #36CA95 99.2%);
       border-radius: 3px;
 
       @include respond-to(sm) {

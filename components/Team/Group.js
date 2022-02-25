@@ -19,7 +19,7 @@ export default function Group({group}) {
       <h5>{group.head[locale]}</h5>
       <a className={isOpen ? style.opened : ''} onClick={handleOpen}><span>{group.head[locale]}</span></a>
       <ul className={isOpen ? style.opened : ''}>
-        {group.members.map((person, i) => <li key={person.name + i + person.role}>
+        {group.members.map((person, i) => <li className={person.imageName ? style.auto : ''} key={person.name + i + person.role}>
           <Person person={person} />
         </li>)}
       </ul>

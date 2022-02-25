@@ -49,9 +49,10 @@
           ]
         },
         {
+          "imageName": true,
           "name": {
-            "en": "<img src='/assets/images/svg_volodya.svg' />",
-            "ru": "<img src='/assets/images/svg_volodya.svg' />"
+            "en": "<img src='/assets/images/svg_volodya.svg' /><img src='/assets/images/svg_volodya_center.svg' />",
+            "ru": "<img src='/assets/images/svg_volodya.svg' /><img src='/assets/images/svg_volodya_center.svg' />"
           },
           "ava": "/assets/images/vladimir-r.png"
         },
