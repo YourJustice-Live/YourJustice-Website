@@ -38,6 +38,21 @@
     line-height: 24px;
     letter-spacing: $ls-first;
     margin-bottom: 6px;
+
+    img {
+      &:first-of-type {
+        @include respond-to(sm) {
+          display: none;
+        }
+      }
+      &:last-of-type {
+        display: none;
+
+        @include respond-to(sm) {
+          display: block;
+        }
+      }
+    }
   }
 
   span {
