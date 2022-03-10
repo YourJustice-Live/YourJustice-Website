@@ -1,12 +1,12 @@
 export const data = {
   en: {
-    text: 'Decentralized Web3 Social Platform to Empower Communities, States and Sovereign Individuals.',
+    text: 'Decentralized Reputation & Justice System for Web3 & Real World Issues',
     list: [
       'Current Version: Alpha 0.5.0 (Private)'
     ]
   },
   ru: {
-    text: 'Децентрализованные законы, правосудие и экономика  для цифровых племен и суверенных лиц',
+    text: 'Decentralized Reputation & Justice System for Web3 & Real World Issues',
     list: [
       'Текущая версия: Alpha 0.5.0 (Частная)'
     ]
