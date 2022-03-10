@@ -5,8 +5,8 @@ export const data = {
       ru: 'Что внутри?'
     },
     text: {
-      en: 'Transparent anti-fragile Law 3.0 platform for all types of human relations.',
-      ru: 'Прозрачная антихрупкая платформа Law 3.0 для всех типов человеческих отношений.'
+      en: 'Decentralized Reputation, Laws & Justice 3.0 platform for all types of human interactions',
+      ru: 'Decentralized Reputation, Laws & Justice 3.0 platform for all types of human interactions'
     }
   },
   sections: [
@@ -14,25 +14,21 @@ export const data = {
       className: 'sectionFirst',
       image: '/assets/images/inner-1.png',
       title: {
-        en: 'Jurisdictions built on your own Values',
-        ru: 'Юрисдикции, основанные на ваших ценностях'
+        en: 'Create jurisdiction or join existing one',
+        ru: 'Создай свою юрисдикцию или присоединись к существующей  '
       },
       text: {
-        en: 'Online tribes built on shared human values',
-        ru: 'Интернет-племена, основанные на общих человеческих ценностях'
+        en: '',
+        ru: ''
       },
       list: [
         {
-          en: 'Core values declared by communities, companies, states and individuals',
+          en: 'Declare your values & laws - what you think is good & bad in different dimenstions',
           ru: 'Основные ценности, декларируемые сообществами, компаниями, государствами и отдельными лицами'
         },
         {
-          en: 'Rules enforced by social rating',
-          ru: 'Rules enforced by social rating'
-        },
-        {
-          en: 'Easy search of like-minded people, community members, customers and providers, staff, citizens or netizens',
-          ru: 'Удобный поиск единомышленников, членов сообщества, клиентов и провайдеров, сотрудников, граждан или пользователей сети'
+          en: 'Easily match with like-minded people - community members, customers & providers, staff',
+          ru: 'Легко находи единомышленников - участников сообщества, клиентов и провайдеров, сотрудников'
         }
       ],
       button: {
@@ -48,20 +44,20 @@ export const data = {
       image: '/assets/images/inner-2.png',
       title: {
         en: 'Your own laws & justice on blockchain',
-        ru: 'Ваши собственные законы и справедливость на Блокчане'
+        ru: 'Your own laws & justice on blockchain'
       },
       list: [
         {
-          en: 'Fast online justice',
-          ru: 'Fast online justice'
+          en: 'Enforce rules through impacting plural social score',
+          ru: 'Enforce rules through impacting plural social score'
         },
         {
-          en: 'State, community and corporate governance',
-          ru: 'State, community and corporate governance'
+          en: 'File cases, upload evidence, invite witnesses and judges',
+          ru: 'File cases, upload evidence, invite witnesses and judges'
         },
         {
-          en: 'Constitutions, laws, smart laws',
-          ru: 'Constitutions, laws, smart laws'
+          en: 'Gain justice faster, cheaper and more efficient then at institutions',
+          ru: 'Gain justice faster, cheaper and more efficient then at institutions'
         }
       ],
       button: {
@@ -76,25 +72,17 @@ export const data = {
       className: 'sectionThird',
       image: '/assets/images/inner-3.png',
       title: {
-        en: 'Cross-chain economics',
-        ru: 'Скрещенная экономика'
+        en: 'Gain Transparent Reputation',
+        ru: 'Gain Transparent Reputation'
       },
       list: [
         {
-          en: 'Marketplaces',
-          ru: 'Торговые площадки'
+          en: 'Anyone can check your reputation & impact it through trustable cases',
+          ru: 'Anyone can check your reputation & impact it through trustable cases'
         },
         {
-          en: 'Tokenomics',
-          ru: 'Токеноматы'
-        },
-        {
-          en: 'Public services',
-          ru: 'Общественные услуги'
-        },
-        {
-          en: 'Smart contracts',
-          ru: 'Умные контракты'
+          en: 'If you do good to other people - you gain reputation score',
+          ru: 'If you do good to other people - you gain reputation score'
         }
       ],
       button: {
