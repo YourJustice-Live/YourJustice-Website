@@ -81,7 +81,7 @@ export default function Footer({lang, setLang}) {
             <h3>{title[locale]}:</h3>
             <ul>
               <li>
-                <a href="mailto:team@yourjustice.live"><Icon icon="message" className={style.icon} /><span>team@yourjustice.live</span></a>
+                <a href="mailto:team@yourjustice.team"><Icon icon="message" className={style.icon} /><span>team@yourjustice.life</span></a>
               </li>
             </ul>
           </div>

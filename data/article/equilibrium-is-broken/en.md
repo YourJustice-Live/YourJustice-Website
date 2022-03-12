@@ -9,7 +9,7 @@ This article presents only the results of our reflections on the causes. The exi
 <details>
   <summary>Who are we?</summary>
 <br>
-	YourJustice.Live is a decentralized platform for virtual tribes and jurisdictions with their own legislation, social rankings, courts, contracts, and economics. With YourJustice everyone can create their own jurisdiction or join an existing one. The unifying environment is Humanity.
+	YourJustice is a decentralized platform for virtual tribes and jurisdictions with their own legislation, social rankings, courts, contracts, and economics. With YourJustice everyone can create their own jurisdiction or join an existing one. The unifying environment is Humanity.
 
 	All forms of human relations can be expressed and automated on this platform using the human-readable-writable markup language YJML or a visual editor.
 
@@ -129,5 +129,3 @@ We see that every day more and more people on planet Earth are ready to grow up.
 We believe that together we can affect the equilibrium of large systems for the benefit of mankind. Our task is to find each other. Then we will improve the chances for everyone.
 
 We will devote a WhitePaper to how we see the New Equilibrium and what technological possibilities will lead to it.
-
-

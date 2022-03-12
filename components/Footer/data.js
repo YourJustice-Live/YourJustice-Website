@@ -10,8 +10,8 @@ export const data = {
   linksGroups: [
     {
       title: {
-        en: 'YourJustice.live',
-        ru: 'YourJustice.live'
+        en: 'YourJustice',
+        ru: 'YourJustice'
       },
       links: [
         {
@@ -90,8 +90,8 @@ export const data = {
   ],
   copy: {
     text: {
-      en: 'Copyright © 2021 YourJustice.live. All rights reserved.',
-      ru: 'Copyright © 2021 YourJustice.live. Все права защищены.'
+      en: 'Copyright © 2021 YourJustice. All rights reserved.',
+      ru: 'Copyright © 2021 YourJustice. Все права защищены.'
     },
     links: [
       {

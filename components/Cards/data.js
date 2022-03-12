@@ -3,12 +3,28 @@ export const data = {
     {
       image: '/assets/images/card-1.png',
       title: {
-        en: 'Community Leaders',
-        ru: 'Сообщества и племена'
+        en: 'Crypto Enthusiasts',
+        ru: 'Crypto Enthusiasts'
       },
       text: {
-        en: 'Grow your community to deliver the mission. Attract humans with common values. Create a transparent social rating on blockchainto praise actors and engage in your purpose.',
-        ru: 'Grow your community to deliver the mission. Attract humans with common values. Create a transparent social rating on blockchainto praise actors and engage in your purpose.'
+        en: 'Interact with those, whom you can trust. Make web3 more transparent through impacting reputation.',
+        ru: 'Interact with those, whom you can trust. Make web3 more transparent through impacting reputation.'
+      },
+      button: {
+        link: '/',
+        en: 'Join our community',
+        ru: 'Join our community'
+      }
+    },
+    {
+      image: '/assets/images/card-2.png',
+      title: {
+        en: 'Communities',
+        ru: 'Communities'
+      },
+      text: {
+        en: 'Make your own laws & justice. Build trust among your community.  Attract those, who make positive impact.',
+        ru: 'Make your own laws & justice. Build trust among your community.  Attract those, who make positive impact.'
       },
       button: {
         link: '/',
@@ -17,46 +33,30 @@ export const data = {
       }
     },
     {
-      image: '/assets/images/card-2.png',
-      title: {
-        en: 'States',
-        ru: 'States'
-      },
-      text: {
-        en: 'Compete for citizens attracting great minds. Enhance governance efficiency utilising DeLaw. Create infrastructure of public services 3.0 ',
-        ru: 'Compete for citizens attracting great minds. Enhance governance efficiency. Create infrastructure of public services 3.0. '
-      },
-      button: {
-        link: '/',
-        en: 'Onboard your state',
-        ru: 'Onboard your state'
-      }
-    },
-    {
       image: '/assets/images/card-3.png',
       title: {
-        en: 'Developers and Integrators',
-        ru: 'Разработчики'
+        en: 'Web3 Developers',
+        ru: 'Web3 Developers'
       },
       text: {
-        en: 'Become a co-owner of a game-changing project. Help to onboard communities and develop killer-features.',
-        ru: 'Потратьте время на проект, который изменит правила игры, помогите построить более справедливый мир с помощью технологий как часть команды.'
+        en: 'Those, who want to make the world more fair while building on Polygon, Solidity, IPFS, theGraph, Node JS',
+        ru: 'Those, who want to make the world more fair while building on Polygon, Solidity, IPFS, theGraph, Node JS',
       },
       button: {
         link: '',
         en: 'Build with us',
-        ru: 'Строй с нами'
+        ru: 'Build with us'
       }
     },
     {
       image: '/assets/images/card-4.png',
       title: {
-        en: 'Investors and Ambassadors',
-        ru: 'Ambassadors and Advisors'
+        en: 'Investors & Ambassadors',
+        ru: 'Investors & Ambassadors'
       },
       text: {
         en: 'Invest in building trust. Advocate justice worldwide. Enhance society via CSR practices with YourJustice.⁤',
-        ru: 'Advocate justice worldwide, invest your experience and social capital and make impact, connect like-minded people.'
+        ru: 'Invest in building trust. Advocate justice worldwide. Enhance society via CSR practices with YourJustice.'
       },
       button: {
         link: '',

@@ -72,8 +72,8 @@ export const data = {
       className: 'sectionThird',
       image: '/assets/images/inner-3.png',
       title: {
-        en: 'Gain Transparent Reputation',
-        ru: 'Gain Transparent Reputation'
+        en: 'Gain transparent reputation',
+        ru: 'Gain transparent reputation'
       },
       list: [
         {
