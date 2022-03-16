@@ -12,54 +12,42 @@ export const data = {
   roadmap: {
     en: [
       {
-        header: 'Q3 2021 <br />Initial Investment <em>– $1 mln</em>',
+        header: 'Q3 2021 <br />PreSend <em>- $300K</em>',
         list: [
           {
+            text: 'Team'
+          },
+          {
+            text: 'Tokenomics'
+          },
+          {
             text: 'Ontology'
-          },
-          {
-            text: 'YJML Language'
-          },
-          {
-            text: 'Research'
           },
           {
             text: 'CustDev'
           },
           {
             text: 'Marketing'
-          },
-          {
-            text: 'Tokenomics'
           }
         ]
       },
       {
-        header: 'Q1 2022 <br />Centralized Alpha',
+        header: 'Q2 2022 Alpha',
         list: [
           {
             text: 'Reputation & Justice Engine',
             list: [
               {
-                text: 'Profiles & Scores'
+                text: 'Profiles'
+              },
+              {
+                text: 'Reporting Scores'
               },
               {
                 text: 'Escalation and Redemption'
               },
               {
-                text: 'Courts'
-              },
-              {
-                text: 'Moderation'
-              },
-              {
-                text: 'Jurisdiction Profiles'
-              },
-              {
-                text: 'Pseudonyms'
-              },
-              {
-                text: 'Unique ID'
+                text: 'Jurisdiction & Laws'
               }
             ]
           },
@@ -78,9 +66,6 @@ export const data = {
             text: 'Networks',
             list: [
               {
-                text: 'Payment with ERC20'
-              },
-              {
                 text: 'Polygon'
               },
               {
@@ -89,12 +74,12 @@ export const data = {
             ]
           },
           {
-            text: 'Open API'
+            text: 'Solution Architecture'
           }
         ]
       },
       {
-        header: 'Q2 2022 <br />Centralized Alpha 2',
+        header: 'Q3 2022 Alpha',
         list: [
           {
             text: 'Extending Engine',
@@ -104,6 +89,15 @@ export const data = {
               },
               {
                 text: 'Memory Profiles'
+              },
+              {
+                text: 'Courts'
+              },
+              {
+                text: 'Mediation'
+              },
+              {
+                text: 'Moderation'
               }
             ]
           },
@@ -115,9 +109,6 @@ export const data = {
               },
               {
                 text: 'Webhooks'
-              },
-              {
-                text: 'Open Data'
               }
             ]
           },
@@ -130,36 +121,36 @@ export const data = {
             ]
           },
           {
-            text: 'Civil &Legal Threats Insurance'
+            text: 'Civil & Legal Threats Insurance'
           }
         ]
       },
       {
-        header: 'Q3 2022 <br />Centralized Alpha 3',
+        header: 'Q4 2022 Beta',
         list: [
           {
-            text: 'Jurisdiction Engine for Communities, DAOs, States, SEZs'
-          },
-          {
-            text: 'Governance',
+            text: 'Jurisdiction Engine',
             list: [
               {
-                text: 'ZN Voting Engine'
+                text: 'for Communities'
               },
               {
-                text: 'Decentralized legislation'
+                text: 'for DAOs'
+              },
+              {
+                text: 'for States'
+              },
+              {
+                text: 'for SEZs'
               }
             ]
           },
           {
+            text: 'Decentralized legislation'
+          },
+          {
             text: 'Code is Codex Social Structures',
             list: [
-              {
-                text: 'DAOs integration'
-              },
-              {
-                text: 'Organizations'
-              },
               {
                 text: 'Compliances'
               },
@@ -167,43 +158,62 @@ export const data = {
                 text: 'Contracts'
               }
             ]
-          },
-          {
-            text: 'Communication Tools',
-            list: [
-              {
-                text: 'Disputes'
-              },
-              {
-                text: 'News Feeds'
-              },
-              {
-                text: 'Chats'
-              }
-            ]
           }
         ]
       },
       {
-        header: 'Q2 2023 <br />Decentralized Beta',
+        header: 'Q1 2023 Release'
+      }
+    ],
+    ru: [
+      {
+        header: 'Q3 2021 <br />PreSend <em>- $300K</em>',
         list: [
           {
-            text: 'Open Mods',
+            text: 'Team'
+          },
+          {
+            text: 'Tokenomics'
+          },
+          {
+            text: 'Ontology'
+          },
+          {
+            text: 'CustDev'
+          },
+          {
+            text: 'Marketing'
+          }
+        ]
+      },
+      {
+        header: 'Q2 2022 Alpha',
+        list: [
+          {
+            text: 'Reputation & Justice Engine',
             list: [
               {
-                text: 'WASM (EVM-compatible)'
+                text: 'Profiles'
               },
               {
-                text: 'Web Components'
+                text: 'Reporting Scores'
               },
               {
-                text: 'Coin issue'
+                text: 'Escalation and Redemption'
               },
               {
-                text: 'ERC 20 Tokens'
+                text: 'Jurisdiction & Laws'
+              }
+            ]
+          },
+          {
+            text: 'Genesis',
+            list: [
+              {
+                text: 'Crypto People Profiles'
               },
               {
-                text: 'NFT'
+                text: 'Crypto Companies Profiles'
               }
             ]
           },
@@ -211,162 +221,89 @@ export const data = {
             text: 'Networks',
             list: [
               {
-                text: 'TestNet'
-              },
-              {
-                text: 'MainNet'
-              },
-              {
-                text: 'AutoFork'
-              },
-              {
-                text: 'SideChains'
-              }
-            ]
-          },
-          {
-            text: 'Diplomacy Tools',
-            list: [
-              {
-                text: 'Visa Transport'
-              }
-            ]
-          }
-        ]
-      },
-      {
-        header: 'Q4 2023 <br />Release'
-      }
-    ],
-    ru: [
-      {
-        header: 'Q3 2021 <br />Initial Investment<em> - $1 mln</em>'
-      },
-      {
-        header: 'Q1 2021 <br />Centralized Alpha',
-        list: [
-          {
-            text: 'Tiles',
-            list: [
-              {
-                text: 'Editors',
-                list: [
-                  {
-                    text: 'YJML Editor'
-                  },
-                  {
-                    text: 'Drag’n’Drop'
-                  },
-                  {
-                    text: 'Web Editor'
-                  }
-                ]
-              },
-              {
-                text: 'Apps',
-                list: [
-                  {
-                    text: 'Jurisdictions, Values, Rules'
-                  },
-                  {
-                    text: 'Courts'
-                  },
-                  {
-                    text: 'Visas / Passports'
-                  },
-                  {
-                    text: 'Value Tests'
-                  },
-                  {
-                    text: 'Moderation'
-                  },
-                  {
-                    text: 'Contracts'
-                  },
-                  {
-                    text: 'Votes'
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            text: 'Pure BIO ID'
-          },
-          {
-            text: 'Content (Forums, Feeds)'
-          },
-          {
-            text: 'Doc Storage'
-          }
-        ]
-      },
-      {
-        header: 'Q3 2021 <br />Centralized Alpha 2',
-        list: [
-          {
-            text: 'Open Mods (WASM)'
-          },
-          {
-            text: 'Open Components'
-          },
-          {
-            text: 'External Networks',
-            list: [
-              {
-                text: 'Coin Issue'
-              },
-              {
-                text: 'ERC20 Tokens '
-              },
-              {
-                text: 'NFT '
-              }
-            ]
-          },
-          {
-            text: 'Tiles',
-            list: [
-              {
-                text: 'DAOs'
-              },
-              {
-                text: 'Marketplaces'
-              }
-            ]
-          }
-        ]
-      },
-      {
-        header: 'Q2 2023 <br />Decentralized Beta',
-        list: [
-          {
-            text: 'Testnet'
-          },
-          {
-            text: 'Mainnet'
-          },
-          {
-            text: 'AutoFork'
-          },
-          {
-            text: 'SideChains'
-          },
-          {
-            text: 'Bridges',
-            list: [
-              {
-                text: 'Ethereum'
-              },
-              {
                 text: 'Polygon'
+              },
+              {
+                text: 'BSC'
+              }
+            ]
+          },
+          {
+            text: 'Solution Architecture'
+          }
+        ]
+      },
+      {
+        header: 'Q3 2022 Alpha',
+        list: [
+          {
+            text: 'Extending Engine',
+            list: [
+              {
+                text: 'Organization Profiles'
+              },
+              {
+                text: 'Memory Profiles'
+              },
+              {
+                text: 'Courts'
+              },
+              {
+                text: 'Mediation'
+              },
+              {
+                text: 'Moderation'
+              }
+            ]
+          },
+          {
+            text: 'Integrations',
+            list: [
+              {
+                text: 'Reputation Widget'
+              },
+              {
+                text: 'Webhooks'
+              }
+            ]
+          },
+          {
+            text: 'Matching',
+            list: [
+              {
+                text: 'Value Tests'
+              }
+            ]
+          },
+          {
+            text: 'Civil & Legal Threats Insurance'
+          }
+        ]
+      },
+      {
+        header: 'Q4 2022 Beta',
+        list: [
+          {
+            text: 'Jurisdiction Engine for Communities, DAOs, States, SEZs'
+          },
+          {
+            text: 'Decentralized legislation'
+          },
+          {
+            text: 'Code is Codex Social Structures',
+            list: [
+              {
+                text: 'Compliances'
+              },
+              {
+                text: 'Contracts'
               }
             ]
           }
         ]
       },
       {
-        header: 'Q4 2023 <br />Release'
+        header: 'Q1 2023 Release'
       }
     ]
   },
