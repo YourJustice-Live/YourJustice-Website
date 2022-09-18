@@ -2,8 +2,8 @@
   "team": [
     {
       "head": {
-        "en": "Co-Founders",
-        "ru": "Co-Founders"
+        "en": "Core Team",
+        "ru": "Core Team"
       },
       "members": [
         {
@@ -26,35 +26,6 @@
               "src": "https://www.linkedin.com/in/timurartemev/"
             }
           ]
-        },
-        {
-          "name": {
-            "en": "Andrey Panferov",
-            "ru": "Andrey Panferov"
-          },
-          "ava": "/assets/images/andrey-panferov.png",
-          "position": {
-            "en": "Co-founder & CEO",
-            "ru": "Co-founder & CEO"
-          },
-          "socials": [
-            {
-              "icon": "twitter",
-              "src": "https://twitter.com/andre1panferov"
-            },
-            {
-              "icon": "linkedin",
-              "src": "https://www.linkedin.com/in/andreypnfrv/"
-            }
-          ]
-        },
-        {
-          "imageName": true,
-          "name": {
-            "en": "<img src='/assets/images/svg_volodya.svg' /><img src='/assets/images/svg_volodya_center.svg' />",
-            "ru": "<img src='/assets/images/svg_volodya.svg' /><img src='/assets/images/svg_volodya_center.svg' />"
-          },
-          "ava": "/assets/images/vladimir-r.png"
         },
         {
           "name": {
@@ -97,15 +68,7 @@
               "src": "https://www.linkedin.com/in/lena-rantsevich-428609/"
             }
           ]
-        }
-      ]
-    },
-    {
-      "head": {
-        "en": "Team",
-        "ru": "Team"
-      },
-      "members": [
+        },
         {
           "name": {
             "en": "Ladislas",
@@ -126,17 +89,6 @@
           "position": {
             "en": "UI/UX designer",
             "ru": "UI/UX designer"
-          }
-        },
-        {
-          "name": {
-            "en": "Gleb Kachalkin",
-            "ru": "Gleb Kachalkin"
-          },
-          "ava": "/assets/images/gleb-kachalkin.png",
-          "position": {
-            "en": "Designer",
-            "ru": "Designer"
           }
         },
         {
@@ -163,72 +115,6 @@
         },
         {
           "name": {
-            "en": "Maksym Dermenzhy",
-            "ru": "Maksym Dermenzhy"
-          },
-          "ava": "/assets/images/maksym-dermenzhy.png",
-          "position": {
-            "en": "Assistant",
-            "ru": "Assistant"
-          }
-        },
-        {
-          "name": {
-            "en": "Victoria Musaverova",
-            "ru": "Victoria Musaverova"
-          },
-          "ava": "/assets/images/victoria-musaverova.png",
-          "position": {
-            "en": "Assistant",
-            "ru": "Assistant"
-          }
-        },
-        {
-          "name": {
-            "en": "Oleg Korzhanov",
-            "ru": "Oleg Korzhanov"
-          },
-          "ava": "/assets/images/oleg-korzhanov.png",
-          "position": {
-            "en": "Node JS Developer",
-            "ru": "Node JS Developer"
-          }
-        },
-        {
-          "name": {
-            "en": "Dmitriy",
-            "ru": "Dmitriy"
-          },
-          "ava": "/assets/images/dmitriy.png",
-          "position": {
-            "en": "Node JS Developer",
-            "ru": "Node JS Developer"
-          }
-        },
-        {
-          "name": {
-            "en": "Sarooj Bukhari",
-            "ru": "Sarooj Bukhari"
-          },
-          "ava": "/assets/images/sarooj-bukhari.png",
-          "position": {
-            "en": "Front End <br />Developer(React JS)",
-            "ru": "Front End <br />Developer(React JS)"
-          }
-        },
-        {
-          "name": {
-            "en": "Anton Petrov",
-            "ru": "Anton Petrov"
-          },
-          "ava": "/assets/images/anton-petrov.png",
-          "position": {
-            "en": "Accountant",
-            "ru": "Accountant"
-          }
-        },
-        {
-          "name": {
             "en": "Alex Shumigay",
             "ru": "Alex Shumigay"
           },
@@ -238,17 +124,9 @@
             "ru": "Archivarius"
           }
         },
-        {
-          "name": {
-            "en": "Vadim Alexeev",
-            "ru": "Vadim Alexeev"
-          },
-          "ava": "/assets/images/vadim-alexeev.png",
-          "position": {
-            "en": "Web3 Architect",
-            "ru": "Web3 Architect"
-          }
         }
+      ]
+    }
       ]
     },
     {
