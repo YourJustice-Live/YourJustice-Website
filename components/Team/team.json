@@ -34,8 +34,8 @@
           },
           "ava": "/assets/images/pion-medvedeva.png",
           "position": {
-            "en": "Co-founder & Ontologist",
-            "ru": "Co-founder & Ontologist"
+            "en": "Co-founder, CEO & Ontologist",
+            "ru": "Co-founder, CEO & Ontologist"
           },
           "socials": [
             {
@@ -123,9 +123,7 @@
             "en": "Archivarius",
             "ru": "Archivarius"
           }
-        },
-      ]
-    }
+        }
       ]
     },
     {
@@ -179,4 +177,6 @@
         }
       ]
     }
+  ]
+}   
   
