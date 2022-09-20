@@ -104,6 +104,17 @@
         },
         {
           "name": {
+            "en": "Aditya Maurya",
+            "ru": "Aditya Maurya"
+          },
+          "ava": "/assets/images/aditya-maurya.jpg",
+          "position": {
+            "en": "Chief Growth Officer",
+            "ru": "Chief Growth Officer"
+          }
+        },
+        {
+          "name": {
             "en": "Ilya Braude - Zolotarev",
             "ru": "Ilya Braude - Zolotarev"
           },
@@ -120,8 +131,8 @@
           },
           "ava": "/assets/images/alex-shumigay.png",
           "position": {
-            "en": "Archivarius",
-            "ru": "Archivarius"
+            "en": "Operations",
+            "ru": "Operations"
           }
         }
       ]
